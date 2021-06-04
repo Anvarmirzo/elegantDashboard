@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
-    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
 }
 
 h1,
@@ -12,7 +16,8 @@ h5,
 h6,
 p,
 ul,
-a {
+a,
+button {
     margin: 0;
     padding: 0;
     line-height: 1;
@@ -32,4 +37,23 @@ a:hover {
 ul,
 ol {
     list-style-type: none;
+}
+
+:focus {
+    outline-style: dotted;
+    outline-width: 3px;
+}
+
+/* content of sr-only is available only for screen-readers */
+.sr-only {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }

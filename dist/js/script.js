@@ -1,3 +1,5 @@
+"use strict";
+
 /* function testWebP(callback) {
 
 var webP = new Image();
@@ -15,4 +17,4 @@ document.querySelector('body').classList.add('webp');
 document.querySelector('body').classList.add('no-webp');
 }
 });*/
-"use strict";
+feather.replace();

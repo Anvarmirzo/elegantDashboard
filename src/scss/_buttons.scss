@@ -1,0 +1,25 @@
+button {
+  cursor: pointer;
+}
+
+.transparent-btn {
+  background-color: transparent;
+  border-width: 0;
+}
+
+.sidebar-toggle {
+  opacity: 0.6;
+  transition: 0.3s all;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.category__btn {
+  position: absolute;
+  border-radius: 50%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

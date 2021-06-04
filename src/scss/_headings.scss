@@ -1,0 +1,21 @@
+h1,
+h2,
+h3 {
+  letter-spacing: 1px;
+  color: $title-active;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.03;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 1.04;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 1.06;
+}
