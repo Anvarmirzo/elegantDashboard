@@ -20,6 +20,6 @@ button {
   position: absolute;
   border-radius: 50%;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 13px;
+  z-index: 1;
 }

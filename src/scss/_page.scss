@@ -1,4 +1,8 @@
 .page-flex {
-  display: flex;
-  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 253px 1fr;
+}
+
+header {
+  grid-column: 1 / 3;
 }

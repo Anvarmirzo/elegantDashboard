@@ -18,3 +18,23 @@ document.querySelector('body').classList.add('no-webp');
 }
 });*/
 feather.replace();
+
+(function () {
+  var sidebar = document.querySelector('.sidebar');
+  var sidebarBtn = document.querySelector('.sidebar-toggle');
+  var catSubMenu = document.querySelector('.cat-sub-menu');
+  sidebarBtn.addEventListener('click', function () {
+    sidebar.classList.toggle('hidden');
+    catSubMenu.classList.remove('visible');
+  });
+})();
+
+(function () {
+  var showCatBtn = document.querySelector('.category__btn');
+  var catSubMenu = document.querySelector('.cat-sub-menu');
+  showCatBtn.addEventListener('click', function (e) {
+    catSubMenu.classList.toggle('visible');
+    console.log(showCatBtn.style.transform);
+    showCatBtn.classList.toggle('rotated');
+  });
+})();
