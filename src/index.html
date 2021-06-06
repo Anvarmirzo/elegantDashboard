@@ -1,12 +1,22 @@
 @@include('_head.html')
+<!-- ! Body -->
+<a class="skip-link sr-only" href="#skip-target">Skip to content</a>
 <div class="page-flex">
   <!-- ! Sidebar -->
   @@include('_aside.html')
-  <!-- ! Main nav -->
-  @@include('_main-nav.html')
-  <!-- ! Main -->
-  <main class="main">
-  </main>
+  <div class="main-wrapper">
+    <!-- ! Main nav -->
+    @@include('_main-nav.html')
+    <!-- ! Main -->
+    <main class="main" id="skip-target">
+      <div class="container">
+        <h2 class="main-title">Empty page</h2>
+        <div class="main-content">
+          <p class="empty-text">This is empty page</p>
+        </div>
+      </div>
+    </main>
+  </div>
 </div>
 <!-- ! Footer -->
 @@include('_footer.html')

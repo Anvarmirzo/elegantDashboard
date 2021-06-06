@@ -21,8 +21,8 @@ feather.replace();
 
 (function () {
   var sidebar = document.querySelector('.sidebar');
-  var sidebarBtn = document.querySelector('.sidebar-toggle');
   var catSubMenu = document.querySelector('.cat-sub-menu');
+  var sidebarBtn = document.querySelector('.sidebar-toggle');
   sidebarBtn.addEventListener('click', function () {
     sidebar.classList.toggle('hidden');
     catSubMenu.classList.remove('visible');

@@ -4,12 +4,14 @@
 @import url(../fonts/stylesheet.css);
 /* Fonts End */
 @import '_mixins';
-@import '_page';
 @import '_custom-grid';
 @import '_variables';
+@import '_page';
 @import 'fonts';
 @import 'icons';
+@import '_feather-custom';
 @import '_headings';
 @import '_buttons';
 @import '_aside';
 @import '_main-nav';
+@import '_main';

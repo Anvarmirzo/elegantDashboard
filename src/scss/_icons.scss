@@ -84,7 +84,19 @@
 }
 
 .avatar {
-  background-image: url(../img/svg/Bulk/Avatar.svg);
+  background-image: url(../img/avatar/Avatar.svg);
   width: 56px;
   height: 56px;
+}
+
+.avatar-2 {
+  background-image: url(../img/avatar/avatar-2.svg);
+  width: 40px;
+  height: 40px;
+}
+
+.notification {
+  background-image: url(../img/svg/Bulk/Notification-gray.svg);
+  width: 24px;
+  height: 24px;
 }

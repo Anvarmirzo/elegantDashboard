@@ -6,6 +6,7 @@
   width: 253px;
   padding: 20px 15px 37px 20px;
   transition: 0.3s all;
+  min-height: 100vh;
 
   &.hidden {
     width: 64px;

@@ -23,3 +23,30 @@ button {
   top: 13px;
   z-index: 1;
 }
+
+.gray-circle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $input-bg;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-width: 0;
+}
+
+.ligt-circle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-width: 0;
+  background-color: #F5EFFF;
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+}

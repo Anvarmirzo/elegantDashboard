@@ -1,8 +1,11 @@
-.page-flex {
-  display: grid;
-  grid-template-columns: 253px 1fr;
+body {
+  background-color: $input-bg;
 }
 
-header {
-  grid-column: 1 / 3;
+.page-flex {
+  display: flex;
+}
+
+.main-wrapper {
+  flex-grow: 1;
 }
