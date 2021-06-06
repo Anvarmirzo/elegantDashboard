@@ -1,12 +1,4 @@
 .error-page {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 30px 15px;
-
   &-title {
     font-weight: 700;
     margin-bottom: 20px;

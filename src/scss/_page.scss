@@ -6,6 +6,16 @@ body {
   display: flex;
 }
 
+.page-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 15px;
+}
+
 .main-wrapper {
   position: relative;
   flex-grow: 1;
