@@ -38,3 +38,11 @@ feather.replace();
     showCatBtn.classList.toggle('rotated');
   });
 })();
+
+(function () {
+  var showMenu = document.querySelector('.lang-switcher');
+  var langMenu = document.querySelector('.lang-menu');
+  showMenu.addEventListener('click', function () {
+    langMenu.classList.toggle('active');
+  });
+})();

@@ -29,10 +29,16 @@
         margin-right: 0;
       }
     }
+  }
 
-    a {
-      font-weight: 500;
-      line-height: 2.83;
+  a {
+    font-weight: 500;
+    line-height: 2.83;
+    border-bottom: 1px transparent dashed;
+
+    &:hover {
+      color: $primary-color;
+      border-color: $primary-color;
     }
   }
 }

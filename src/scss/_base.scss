@@ -39,6 +39,10 @@ ol {
     list-style-type: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 :focus {
     outline-style: dotted;
     outline-width: 3px;
