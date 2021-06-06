@@ -7,6 +7,18 @@ button {
   border-width: 0;
 }
 
+.primary-default-btn {
+  border-radius: 4px;
+  padding: 10px 20px;
+  background-color: #2F49D1;
+  color: #fff;
+
+  &:hover {
+    background-color: #4661F0;
+    color: #fff;
+  }
+}
+
 .sidebar-toggle {
   opacity: 0.6;
   transition: 0.3s all;

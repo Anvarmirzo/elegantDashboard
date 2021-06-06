@@ -1055,6 +1055,18 @@ button {
   border-width: 0;
 }
 
+.primary-default-btn {
+  border-radius: 4px;
+  padding: 10px 20px;
+  background-color: #2F49D1;
+  color: #fff;
+}
+
+.primary-default-btn:hover {
+  background-color: #4661F0;
+  color: #fff;
+}
+
 .sidebar-toggle {
   opacity: 0.6;
   -webkit-transition: 0.3s all;
@@ -1726,6 +1738,50 @@ button {
 .footer a:hover {
   color: #0061f7;
   border-color: #0061f7;
+}
+
+.error-page {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.error-page-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.error-page-subtitle {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #767676;
+}
+
+.error-page picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.error-page img {
+  max-width: 90%;
+  text-align: center;
+  margin: auto;
 }
 
 @media (min-width: 576px) {

@@ -1,0 +1,32 @@
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 15px;
+
+  &-title {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &-subtitle {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #767676;
+  }
+
+  picture {
+    display: flex;
+  }
+
+  img {
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+}
