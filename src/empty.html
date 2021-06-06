@@ -1,4 +1,6 @@
-@@include('_head.html')
+@@include('_head.html',{
+'title': 'Empty page'
+})
 <!-- ! Body -->
 <a class="skip-link sr-only" href="#skip-target">Skip to content</a>
 <div class="page-flex">
@@ -16,7 +18,8 @@
         </div>
       </div>
     </main>
+    @@include('_footer-content.html')
   </div>
 </div>
 <!-- ! Footer -->
-@@include('_footer.html')
+@@include('_footer-scripts.html')

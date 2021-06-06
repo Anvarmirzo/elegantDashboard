@@ -1,11 +1,11 @@
 @import '_normalize';
-@import '_base';
+@import '_variables';
 /* Fonts Start */
 @import url(../fonts/stylesheet.css);
 /* Fonts End */
 @import '_mixins';
 @import '_custom-grid';
-@import '_variables';
+@import '_base';
 @import '_page';
 @import 'fonts';
 @import 'icons';
@@ -15,3 +15,4 @@
 @import '_aside';
 @import '_main-nav';
 @import '_main';
+@import '_footer'
