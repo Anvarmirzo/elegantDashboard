@@ -24,14 +24,13 @@
   border-radius: 10px;
   padding: 40px 40px 56px;
   background-color: #FFFFFF;
+  text-align: left;
 
   &-label {
-    width: max-content;
     font-weight: 500;
     font-size: 14px;
     line-height: 2.43;
     color: $title-active;
-    text-align: left;
     cursor: pointer;
     margin-bottom: 5px;
 
@@ -60,9 +59,15 @@
   &-checkbox {
     margin-right: 12px;
 
+    &-label {
+      font-family: Inter;
+      font-size: 14px;
+      line-height: 1.71;
+      color: $body;
+    }
+
     &-wrapper {
       display: flex;
-      justify-content: flex-start;
       align-items: center;
       flex-wrap: wrap;
       cursor: pointer;
@@ -74,4 +79,10 @@
   &-btn {
     width: 100%;
   }
+}
+
+.forget-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2.43;
 }

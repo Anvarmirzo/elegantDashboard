@@ -1065,6 +1065,8 @@ h3 {
   color: #171717;
 }
 
+/* Buttons */
+
 button {
   cursor: pointer;
   -webkit-transition: 0.3s all;
@@ -1149,6 +1151,12 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+/* Links */
+
+.link-info {
+  color: #5887ff;
 }
 
 .sidebar {
@@ -1812,17 +1820,14 @@ button {
   border-radius: 10px;
   padding: 40px 40px 56px;
   background-color: #FFFFFF;
+  text-align: left;
 }
 
 .form-label {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   font-weight: 500;
   font-size: 14px;
   line-height: 2.43;
   color: #171717;
-  text-align: left;
   cursor: pointer;
   margin-bottom: 5px;
 }
@@ -1885,13 +1890,17 @@ button {
   margin-right: 12px;
 }
 
+.form-checkbox-label {
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #767676;
+}
+
 .form-checkbox-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1906,6 +1915,12 @@ button {
 
 .form-btn {
   width: 100%;
+}
+
+.forget-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2.43;
 }
 
 @media (min-width: 576px) {
