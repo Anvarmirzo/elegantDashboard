@@ -251,8 +251,12 @@
     height: auto;
 
     a {
-      opacity: 1;
+      opacity: 0.6;
       visibility: visible;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
