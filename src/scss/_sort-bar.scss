@@ -1,0 +1,20 @@
+.sort-bar {
+  padding: 20px 36px 20px 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 0px #DADBE4;
+  border-radius: 10px 10px 0 0;
+
+  .search-wrapper {
+    position: relative;
+    width: max-content;
+
+    input {
+      padding: 5px 42px 5px 16px;
+    }
+
+    svg {
+      left: auto;
+      right: 16px;
+    }
+  }
+}

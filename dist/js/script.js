@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
   })();
 
   (function () {
-    var userDdBtnList = document.querySelectorAll('.users-item__more');
+    var userDdBtnList = document.querySelectorAll('.dropdown-btn');
     var userDdList = document.querySelectorAll('.users-item-dropdown');
     var layer = document.querySelector('.layer');
 
@@ -141,4 +141,40 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   })();
+
+  var checkAll = document.querySelector('.check-all');
+  var checkers = document.querySelectorAll('.check');
+
+  if (checkAll && checkers) {
+    checkAll.addEventListener('change', function (e) {
+      var _iterator4 = _createForOfIteratorHelper(checkers),
+          _step4;
+
+      try {
+        var _loop = function _loop() {
+          var checker = _step4.value;
+
+          if (checkAll.checked) {
+            checker.checked = true;
+          } else {
+            checker.checked = false;
+          }
+
+          checker.addEventListener('change', function (e) {
+            if (!checker.checked) {
+              checkAll.checked = false;
+            }
+          });
+        };
+
+        for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+          _loop();
+        }
+      } catch (err) {
+        _iterator4.e(err);
+      } finally {
+        _iterator4.f();
+      }
+    });
+  }
 });

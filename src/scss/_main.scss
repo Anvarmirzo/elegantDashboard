@@ -18,4 +18,22 @@
       color: $body;
     }
   }
+
+  &-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    .primary-default-btn {
+      svg {
+        margin-right: 9px;
+      }
+    }
+  }
 }

@@ -1,0 +1,85 @@
+.users {
+
+  /* Users Table */
+  &-table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    line-height: 1.4;
+    letter-spacing: -0.3px;
+    color: $body;
+
+    &-info {
+      line-height: 1.4;
+      letter-spacing: -0.3px;
+      color: $body;
+      height: 48px;
+      border-bottom: 1.2px solid #dadbe4;
+      font-size: 14px;
+
+      th {
+        font-weight: 500;
+      }
+    }
+
+    &__checkbox {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      cursor: pointer;
+      width: max-content;
+
+      input {
+        margin-right: 20px;
+      }
+
+      picture {
+        display: flex;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 7px;
+      }
+    }
+
+    td {
+      background-color: #fff;
+      border-top: 1px solid #EEEEEE;
+      border-bottom: 1px solid #EEEEEE;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      &:first-child {
+        padding-left: 20px;
+      }
+    }
+
+    tbody {
+      font-size: 12px;
+
+      tr {
+        &:last-child {
+          .users-item-dropdown {
+            bottom: 250%;
+            top: auto;
+
+            &::before {
+              bottom: -10px;
+              top: auto;
+              border-width: 15px 15px 0 15px;
+              border-color: #fff transparent transparent transparent;
+            }
+          }
+        }
+      }
+    }
+
+    .users-item-dropdown {
+      right: -9px;
+      top: 150%;
+    }
+  }
+}

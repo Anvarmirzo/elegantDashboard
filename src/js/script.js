@@ -5,4 +5,5 @@ document.addEventListener('DOMContentLoaded', function() {
   @@include('_aside.js')
   @@include('_lang-switcher.js')
   @@include('_users-dropdown.js')
+  @@include('_checkbox.js')
 });

@@ -1,5 +1,5 @@
 (function () {
-  const userDdBtnList = document.querySelectorAll('.users-item__more');
+  const userDdBtnList = document.querySelectorAll('.dropdown-btn');
   const userDdList = document.querySelectorAll('.users-item-dropdown');
   const layer = document.querySelector('.layer');
 

@@ -10,6 +10,10 @@ button {
 }
 
 .primary-default-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   border-radius: 4px;
   padding: 10px 20px;
   background-color: $primary-color;
@@ -71,6 +75,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -81,6 +86,10 @@ button {
 .lang-switcher {
   display: flex;
   align-items: center;
+}
+
+.dropdown-btn {
+  opacity: 0.5;
 }
 
 /* Links */
