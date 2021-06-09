@@ -1316,6 +1316,31 @@ button {
   background-color: rgba(75, 222, 151, 0.1);
 }
 
+.select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border: 2px solid #EEEEEE;
+  border-radius: 4px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 20px;
+  color: #b9b9b9;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
 .users {
   /* Users Table */
 }
@@ -1983,6 +2008,17 @@ button {
 }
 
 .sort-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 20px 36px 20px 20px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 0px #DADBE4;
@@ -2004,6 +2040,30 @@ button {
 .sort-bar .search-wrapper svg {
   left: auto;
   right: 16px;
+}
+
+.sort-bar .select {
+  min-width: 185px;
+  margin-right: 20px;
+}
+
+.sort-bar .select.small {
+  min-width: 142px;
+}
+
+.sort-bar .select-wrapper:last-child .select {
+  margin-right: 0;
+}
+
+.sort-bar-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .main {
