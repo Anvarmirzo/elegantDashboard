@@ -1,0 +1,25 @@
+@@include('_head.html',{
+'title': 'Appearance-03'
+})
+<!-- ! Body -->
+<a class="skip-link sr-only" href="#skip-target">Skip to content</a>
+<div class="page-flex">
+  <!-- ! Sidebar -->
+  @@include('_aside.html')
+  <div class="main-wrapper">
+    <!-- ! Main nav -->
+    @@include('_main-nav.html')
+    <!-- ! Main -->
+    <main class="main" id="skip-target">
+      <div class="container">
+        <h2 class="main-title">Appearance</h2>
+        <div class="main-content">
+          <p class="empty-text">This is empty page</p>
+        </div>
+      </div>
+    </main>
+    <!-- ! Footer -->
+    @@include('_footer-content.html')
+  </div>
+</div>
+@@include('_footer-scripts.html')

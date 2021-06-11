@@ -1,0 +1,310 @@
+@@include('_head.html',{
+'title': 'Comments'
+})
+<!-- ! Body -->
+<a class="skip-link sr-only" href="#skip-target">Skip to content</a>
+<div class="page-flex">
+  <!-- ! Sidebar -->
+  @@include('_aside.html')
+  <div class="main-wrapper">
+    <!-- ! Main nav -->
+    @@include('_main-nav.html')
+    <!-- ! Main -->
+    <main class="main" id="skip-target">
+      <div class="container">
+        <h2 class="main-title">All comments</h2>
+        <div class="sort-bar">
+          <div class="sort-bar-start">
+            <div class="search-wrapper">
+              <i data-feather="search" aria-hidden="true"></i>
+              <input type="text" placeholder="Search" required>
+            </div>
+          </div>
+          <div class="sort-bar-end">
+            <div class="select-wrapper">
+              <button class="select transparent-btn" type="button">
+                <span>All dates</span>
+                <i data-feather="chevron-down" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="select-wrapper">
+              <button class="select transparent-btn" type="button">
+                <span>Status</span>
+                <i data-feather="chevron-down" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <table class="users-table">
+          <thead>
+            <tr class="users-table-info">
+              <th>
+                <label class="users-table__checkbox ms-20">
+                  <input type="checkbox" class="check-all">Author
+                </label>
+              </th>
+              <th>Comment</th>
+              <th>Commented in</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <img src="./img/avatar/avatar-face-04.png" alt="User Name">
+                  Kathryn Murphy
+                </label>
+              </td>
+              <td>Tellus integer feugiat scelerisque varius morbi enim nunc faucibus.</td>
+              <td>Tips and Tricks</td>
+              <td>04.04.2021</td>
+              <td><span class="badge-pending">Pending</span></td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <img src="./img/avatar/avatar-face-05.png" alt="User Name">
+                  Marvin McKinney
+                </label>
+              </td>
+              <td>Tellus integer feugiat scelerisque varius morbi enim nunc faucibus.</td>
+              <td>Tips and Tricks</td>
+              <td>04.04.2021</td>
+              <td><span class="badge-active">Answered</span></td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <img src="./img/avatar/avatar-face-03.png" alt="User Name">
+                  Wade Warren
+                </label>
+              </td>
+              <td>Tellus integer feugiat scelerisque varius morbi enim nunc faucibus.</td>
+              <td>Tips and Tricks</td>
+              <td>04.04.2021</td>
+              <td><span class="badge-active">Answered</span></td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <img src="./img/avatar/avatar-face-02.png" alt="User Name">
+                  Theresa Webb
+                </label>
+              </td>
+              <td>Tellus integer feugiat scelerisque varius morbi enim nunc faucibus.</td>
+              <td>Tips and Tricks</td>
+              <td>04.04.2021</td>
+              <td><span class="badge-active">Answered</span></td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <img src="./img/avatar/avatar-face-05.png" alt="User Name">
+                  Wade Warren
+                </label>
+              </td>
+              <td>Tellus integer feugiat scelerisque varius morbi enim nunc faucibus.</td>
+              <td>Tips and Tricks</td>
+              <td>04.04.2021</td>
+              <td><span class="badge-active">Answered</span></td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <img src="./img/avatar/avatar-face-03.png" alt="User Name">
+                  Guy Hawkins
+                </label>
+              </td>
+              <td>Tellus integer feugiat scelerisque varius morbi enim nunc faucibus.</td>
+              <td>Tips and Tricks</td>
+              <td>04.04.2021</td>
+              <td><span class="badge-trashed">Trashed</span></td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <img src="./img/avatar/avatar-face-03.png" alt="User Name">
+                  Darrell Steward
+                </label>
+              </td>
+              <td>Tellus integer feugiat scelerisque varius morbi enim nunc faucibus.</td>
+              <td>Tips and Tricks</td>
+              <td>04.04.2021</td>
+              <td><span class="badge-active">Answered</span></td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <img src="./img/avatar/avatar-face-04.png" alt="User Name">
+                  Leslie Alexander
+                </label>
+              </td>
+              <td>Tellus integer feugiat scelerisque varius morbi enim nunc faucibus.</td>
+              <td>Tips and Tricks</td>
+              <td>04.04.2021</td>
+              <td><span class="badge-active">Answered</span></td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <img src="./img/avatar/avatar-face-02.png" alt="User Name">
+                  Darlene Robertson
+                </label>
+              </td>
+              <td>Tellus integer feugiat scelerisque varius morbi enim nunc faucibus.</td>
+              <td>Tips and Tricks</td>
+              <td>04.04.2021</td>
+              <td><span class="badge-active">Answered</span></td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination-wrapper">
+          <a class="pagination-prev disabled" href="##" title="Go to previous page"><i
+              data-feather="arrow-left"></i></a>
+          <ul class="pagination">
+            <li><a href="##">1</a></li>
+            <li><a href="##">2</a></li>
+            <li><a href="##">3</a></li>
+            <li><a href="##">4</a></li>
+            <li><a href="##">5</a></li>
+            <li><a href="##">...</a></li>
+            <li><a href="##">10</a></li>
+          </ul>
+          <a class="pagination-next" href="##" title="Go to next page"><i data-feather="arrow-right"></i></a>
+        </div>
+      </div>
+    </main>
+    <!-- ! Footer -->
+    @@include('_footer-content.html')
+  </div>
+</div>
+@@include('_footer-scripts.html')
