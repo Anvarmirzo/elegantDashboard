@@ -1,0 +1,65 @@
+.extentions {
+  .col-lg-4 {
+    margin-bottom: 30px;
+  }
+
+  &-item {
+    position: relative;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+
+    &__img {
+      border: 1px solid #EEEEEE;
+      border-radius: 6px;
+      height: 58px;
+      width: 58px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+
+      picture {
+        display: flex;
+      }
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.25;
+      color: $title-active;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.43;
+      color: $body;
+      margin-bottom: 10px;
+    }
+
+    &-footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border-top: 1px solid #EEEEEE;
+      padding-top: 10px;
+
+      .extentions-btn {
+        margin-right: 5px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+}

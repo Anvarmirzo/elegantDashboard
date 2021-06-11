@@ -92,6 +92,18 @@ button {
   opacity: 0.5;
 }
 
+.extentions-btn {
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 5px 20px;
+  color: $danger-color;
+
+  &.disabled {
+    color: $placeholder;
+  }
+}
+
 /* Links */
 .link-info {
   color: $info-color;

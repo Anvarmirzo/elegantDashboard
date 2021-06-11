@@ -1222,6 +1222,18 @@ button {
   opacity: 0.5;
 }
 
+.extentions-btn {
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 5px 20px;
+  color: #f26464;
+}
+
+.extentions-btn.disabled {
+  color: #d6d7e3;
+}
+
 /* Links */
 
 .link-info {
@@ -2415,6 +2427,84 @@ button {
 .users-item .primary-white-btn {
   border-top: 1px solid #EEEEEE;
   width: 100%;
+}
+
+.extentions .col-lg-4 {
+  margin-bottom: 30px;
+}
+
+.extentions-item {
+  position: relative;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+.extentions-item__img {
+  border: 1px solid #EEEEEE;
+  border-radius: 6px;
+  height: 58px;
+  width: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.extentions-item__img picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.extentions-item h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #171717;
+  margin-bottom: 10px;
+}
+
+.extentions-item p {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #767676;
+  margin-bottom: 10px;
+}
+
+.extentions-item-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid #EEEEEE;
+  padding-top: 10px;
+}
+
+.extentions-item-footer .extentions-btn {
+  margin-right: 5px;
+}
+
+.extentions-item-footer .extentions-btn:last-child {
+  margin-right: 0;
+}
+
+.extentions-item .badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 @media (min-width: 576px) {
