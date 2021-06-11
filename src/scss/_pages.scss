@@ -1,0 +1,11 @@
+.pages-table {
+  &-img {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+}

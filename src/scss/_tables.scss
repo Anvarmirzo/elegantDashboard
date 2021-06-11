@@ -32,17 +32,6 @@
       input {
         margin-right: 20px;
       }
-
-      picture {
-        display: flex;
-      }
-
-      img {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        margin-right: 7px;
-      }
     }
 
     td {
@@ -80,6 +69,17 @@
     .users-item-dropdown {
       right: -9px;
       top: 150%;
+    }
+
+    picture {
+      display: flex;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 7px;
     }
   }
 }

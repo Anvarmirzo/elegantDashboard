@@ -1404,19 +1404,6 @@ button {
   margin-right: 20px;
 }
 
-.users-table__checkbox picture {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.users-table__checkbox img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: 7px;
-}
-
 .users-table td {
   background-color: #fff;
   border-top: 1px solid #EEEEEE;
@@ -1448,6 +1435,19 @@ button {
 .users-table .users-item-dropdown {
   right: -9px;
   top: 150%;
+}
+
+.users-table picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.users-table img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 7px;
 }
 
 .pagination {
@@ -2513,6 +2513,21 @@ button {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+.pages-table-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.pages-table-img img {
+  margin-right: 8px;
 }
 
 @media (min-width: 576px) {
