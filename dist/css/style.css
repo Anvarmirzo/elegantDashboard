@@ -1287,7 +1287,8 @@ button {
 .badge-pending,
 .badge-active,
 .badge-trashed,
-.badge-success {
+.badge-success,
+.badge-disabled {
   padding: 1px;
   width: 85px;
   font-weight: 500;
@@ -1316,6 +1317,11 @@ button {
 .badge-pending {
   color: #ffb648;
   background-color: rgba(255, 172, 50, 0.1);
+}
+
+.badge-disabled {
+  color: white;
+  background-color: #ffb648;
 }
 
 .badge-trashed {
@@ -2430,7 +2436,9 @@ button {
 }
 
 .extentions .col-lg-4 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .extentions-item {

@@ -1,0 +1,296 @@
+@@include('_head.html',{
+'title': 'Extention-01'
+})
+<!-- ! Body -->
+<a class="skip-link sr-only" href="#skip-target">Skip to content</a>
+<div class="page-flex">
+  <!-- ! Sidebar -->
+  @@include('_aside.html')
+  <div class="main-wrapper">
+    <!-- ! Main nav -->
+    @@include('_main-nav.html')
+    <!-- ! Main -->
+    <main class="main users" id="skip-target">
+      <div class="container">
+        <div class="main-title-wrapper">
+          <h2 class="main-title">Extentions</h2>
+          <a class="primary-default-btn" href="##"><i data-feather="plus"></i>Add new</a>
+        </div>
+        <div class="sort-bar">
+          <div class="sort-bar-start">
+            <div class="search-wrapper">
+              <i data-feather="search" aria-hidden="true"></i>
+              <input type="text" placeholder="Search" required>
+            </div>
+          </div>
+          <div class="sort-bar-end">
+            <div class="select-wrapper">
+              <button class="select transparent-btn" type="button">
+                <span>All dates</span>
+                <i data-feather="chevron-down" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="select-wrapper">
+              <button class="select transparent-btn" type="button">
+                <span>Status</span>
+                <i data-feather="chevron-down" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <table class="extentions-table users-table">
+          <thead>
+            <tr class="users-table-info">
+              <th>
+                <label class="users-table__checkbox ms-20">
+                  <input type="checkbox" class="check-all">Name
+                </label>
+              </th>
+              <th>Description</th>
+              <th>Version</th>
+              <th>Last update</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="extentions-table__img">
+                    <img src="./img/extentions/1.png" alt="Jetpack security">
+                  </div>
+                </label>
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>4.0.7</td>
+              <td>04.04.2021</td>
+              <td><span class="badge-disabled">Disabled</span></td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="extentions-table__img">
+                    <img src="./img/extentions/2.png" alt="Jetpack security">
+                  </div>
+                </label>
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>4.0.7</td>
+              <td>20.04.2021</td>
+              <td><span class="badge-disabled">Disabled</span></td>
+              <td><span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span></td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="extentions-table__img">
+                    <img src="./img/extentions/3.png" alt="Jetpack security">
+                  </div>
+                </label>
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>4.0.7</td>
+              <td>14.04.2021</td>
+              <td><span class="badge-active">Active</span></td>
+              <td><span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span></td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="extentions-table__img">
+                    <img src="./img/extentions/4.png" alt="Jetpack security">
+                  </div>
+                </label>
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>4.0.7</td>
+              <td>12.04.2021</td>
+              <td><span class="badge-active">Active</span></td>
+              <td><span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span></td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="extentions-table__img">
+                    <img src="./img/extentions/5.png" alt="Jetpack security">
+                  </div>
+                </label>
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>4.0.7</td>
+              <td>04.04.2021</td>
+              <td><span class="badge-active">Active</span></td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="extentions-table__img">
+                    <img src="./img/extentions/6.png" alt="Jetpack security">
+                  </div>
+                </label>
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>4.0.7</td>
+              <td>20.04.2021</td>
+              <td><span class="badge-active">Active</span></td>
+              <td><span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span></td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="extentions-table__img">
+                    <img src="./img/extentions/7.png" alt="Jetpack security">
+                  </div>
+                </label>
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>4.0.7</td>
+              <td>14.04.2021</td>
+              <td><span class="badge-active">Active</span></td>
+              <td><span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span></td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="extentions-table__img">
+                    <img src="./img/extentions/8.png" alt="Jetpack security">
+                  </div>
+                </label>
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>4.0.7</td>
+              <td>12.04.2021</td>
+              <td><span class="badge-active">Active</span></td>
+              <td><span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span></td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="extentions-table__img">
+                    <img src="./img/extentions/9.png" alt="Jetpack security">
+                  </div>
+                </label>
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>4.0.7</td>
+              <td>04.04.2021</td>
+              <td><span class="badge-active">Active</span></td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <!-- ! Footer -->
+    @@include('_footer-content.html')
+  </div>
+</div>
+@@include('_footer-scripts.html')
