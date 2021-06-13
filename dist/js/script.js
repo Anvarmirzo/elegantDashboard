@@ -243,4 +243,23 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   })();
+
+  var displace = window.displacejs;
+  var elements = document.querySelectorAll('.draggable');
+  var options = {// constrain: true,
+  };
+
+  var _iterator8 = _createForOfIteratorHelper(elements),
+      _step8;
+
+  try {
+    for (_iterator8.s(); !(_step8 = _iterator8.n()).done;) {
+      var element = _step8.value;
+      var d = displace(element, options);
+    }
+  } catch (err) {
+    _iterator8.e(err);
+  } finally {
+    _iterator8.f();
+  }
 });

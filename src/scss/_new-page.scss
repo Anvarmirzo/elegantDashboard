@@ -1,0 +1,28 @@
+.new-page {
+  &-content {
+    margin-top: 0;
+
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__row {
+    justify-content: center;
+  }
+
+  &-label {
+    display: block;
+    width: max-content;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.75px;
+    color: $label;
+    cursor: pointer;
+    margin-bottom: 11px;
+  }
+
+}

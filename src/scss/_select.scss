@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   border: 2px solid #EEEEEE;
   border-radius: 4px;
   width: max-content;
@@ -12,4 +11,12 @@
   line-height: 1.5;
   background-color: #FFFFFF;
   cursor: pointer;
+
+  @include custom-media(1400px) {
+    font-size: 14px;
+  }
+
+  @include custom-media(1304px) {
+    padding: 6px;
+  }
 }

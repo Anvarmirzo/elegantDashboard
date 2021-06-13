@@ -24,6 +24,7 @@
             </ul>
           </nav>
           <!-- ! Tab content -->
+          <!-- General -->
           <article class="tab-content" id="general">
             <form class="row tab-form">
               <!-- ! Start content -->
@@ -99,12 +100,65 @@
               </div>
             </form>
           </article>
+          <!-- Widgets -->
           <article class="tab-content" id="widgets">
-            <h2>2</h2>
+            <div class="row drag__row">
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="drag__title">
+                      <h3>Available Widgets</h3>
+                      <p>To activate a widget drag it to a sidebar or click on it. To deactivate a widget and delete its
+                        settings,
+                        drag it back.</p>
+                    </div>
+                    <div class="row draggable__row">
+                      <div class="col-lg-6">
+                        <div class="draggable">
+                          <div>
+                            <p class="draggable__title">Search</p>
+                            <p class="draggable__subtitle">A search form for your site.</p>
+                          </div>
+                          <span class="icon move" aria-hidden="true"></span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="draggable">
+                          <div>
+                            <p class="draggable__title">Search</p>
+                            <p class="draggable__subtitle">A search form for your site.</p>
+                          </div>
+                          <span class="icon move" aria-hidden="true"></span>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="draggable">
+                          <div>
+                            <p class="draggable__title">Search</p>
+                            <p class="draggable__subtitle">A search form for your site.</p>
+                          </div>
+                          <span class="icon move" aria-hidden="true"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <article class="appearance-sidebar">
+                  <div class="appearance-sidebar-title">
+                    <h3>Sidebar</h3>
+                    <p>Add widgets here to appear in your sidebar.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
           </article>
+          <!-- Menus -->
           <article class="tab-content" id="menus">
             <h2>3</h2>
           </article>
+          <!-- Editor -->
           <article class="tab-content" id="editor">
             <h2>4</h2>
           </article>
@@ -115,4 +169,12 @@
     @@include('_footer-content.html')
   </div>
 </div>
+<script>
+  // Choose the default section on page load
+  // And scroll to the top to show nav
+  window.onload = function () {
+    window.location.hash = 'widgets'
+    document.documentElement.scrollTop = 0
+  }
+</script>
 @@include('_footer-scripts.html')

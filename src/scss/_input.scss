@@ -5,6 +5,22 @@ input {
   min-height: 40px;
   border: solid transparent 2px !important;
 
+  &[type="checkbox"],
+  &[type="radio"] {
+    min-height: auto;
+  }
+
+  &[type="radio"] {
+    width: 24px;
+    height: 24px;
+    margin-right: 19px;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
   &::placeholder {
     font-weight: 500;
     font-size: 14px;
@@ -19,8 +35,63 @@ input {
   }
 }
 
+.check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
 .tab-content {
   input {
     padding: 5px 16px;
   }
+}
+
+textarea {
+  background-color: $input-bg;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: transparent;
+  min-height: 134px;
+  padding: 5px 16px;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.43;
+    color: $placeholder;
+  }
+
+  &:focus {
+    outline: none;
+    border: $input-focus solid !important;
+    box-shadow: 0 0 0 2px $input-focus;
+  }
+}
+
+.content-textarea {
+  min-height: 366px;
+}
+
+.white-block {
+  .radio {
+    position: absolute;
+    left: 0;
+    background-image: none;
+    transition: 0.3s all;
+    background-color: #E3DAF9;
+    border-radius: 50%;
+  }
+
+  input:checked+.radio {
+    background-color: transparent;
+    background-image: url(../img/svg/radio.svg);
+  }
+}
+
+label {
+  width: max-content;
+  cursor: pointer;
 }

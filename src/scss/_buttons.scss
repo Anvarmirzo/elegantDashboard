@@ -2,7 +2,7 @@
 button {
   cursor: pointer;
   transition: 0.3s all;
-  border: 2px solid transparent !important;
+  border: 2px solid transparent;
 
   &:focus {
     outline: none;
@@ -46,6 +46,22 @@ button {
 
   &:hover {
     color: #4661F0;
+  }
+}
+
+.secondary-default-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  padding: 10px 20px;
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  background-color: transparent;
+
+  &:hover {
+    background-color: rgba(47, 73, 209, 0.1);
   }
 }
 

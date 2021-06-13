@@ -36,4 +36,18 @@
       }
     }
   }
+
+  &-btns-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    button {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
 }
