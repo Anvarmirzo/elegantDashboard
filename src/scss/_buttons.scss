@@ -104,6 +104,12 @@ button {
   }
 }
 
+.filter-btn {
+  svg {
+    margin-right: 6px;
+  }
+}
+
 /* Links */
 .link-info {
   color: $info-color;

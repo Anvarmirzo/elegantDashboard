@@ -157,8 +157,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (checkAll.checked) {
               checker.checked = true;
+              checker.parentElement.parentElement.parentElement.classList.add('active');
             } else {
               checker.checked = false;
+              checker.parentElement.parentElement.parentElement.classList.remove('active');
             }
           }
         } catch (err) {
@@ -167,39 +169,41 @@ document.addEventListener('DOMContentLoaded', function () {
           _iterator4.f();
         }
       });
-    }
 
-    var _iterator5 = _createForOfIteratorHelper(checkers),
-        _step5;
+      var _iterator5 = _createForOfIteratorHelper(checkers),
+          _step5;
 
-    try {
-      var _loop = function _loop() {
-        var checker = _step5.value;
-        checker.addEventListener('change', function (e) {
-          if (!checker.checked) {
-            checkAll.checked = false;
-          }
+      try {
+        var _loop = function _loop() {
+          var checker = _step5.value;
+          checker.addEventListener('change', function (e) {
+            checker.parentElement.parentElement.parentElement.classList.toggle('active');
 
-          var totalCheckbox = document.querySelectorAll('.users-table .check');
-          var totalChecked = document.querySelectorAll('.users-table .check:checked');
-
-          if (totalCheckbox && totalChecked) {
-            if (totalCheckbox.length == totalChecked.length) {
-              checkAll.checked = true;
-            } else {
+            if (!checker.checked) {
               checkAll.checked = false;
             }
-          }
-        });
-      };
 
-      for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
-        _loop();
+            var totalCheckbox = document.querySelectorAll('.users-table .check');
+            var totalChecked = document.querySelectorAll('.users-table .check:checked');
+
+            if (totalCheckbox && totalChecked) {
+              if (totalCheckbox.length == totalChecked.length) {
+                checkAll.checked = true;
+              } else {
+                checkAll.checked = false;
+              }
+            }
+          });
+        };
+
+        for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
+          _loop();
+        }
+      } catch (err) {
+        _iterator5.e(err);
+      } finally {
+        _iterator5.f();
       }
-    } catch (err) {
-      _iterator5.e(err);
-    } finally {
-      _iterator5.f();
     }
   })();
 });

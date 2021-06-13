@@ -1,0 +1,343 @@
+@@include('_head.html',{
+'title': 'Categoires'
+})
+<!-- ! Body -->
+<a class="skip-link sr-only" href="#skip-target">Skip to content</a>
+<div class="page-flex">
+  <!-- ! Sidebar -->
+  @@include('_aside.html')
+  <div class="main-wrapper">
+    <!-- ! Main nav -->
+    @@include('_main-nav.html')
+    <!-- ! Main -->
+    <main class="main" id="skip-target">
+      <div class="container">
+        <div class="main-title-wrapper">
+          <h2 class="main-title">All categories</h2>
+          <a class="primary-default-btn" href="##"><i data-feather="plus"></i>Add new</a>
+        </div>
+        <div class="sort-bar">
+          <div class="sort-bar-start">
+            <div class="search-wrapper">
+              <i data-feather="search" aria-hidden="true"></i>
+              <input type="text" placeholder="Search" required>
+            </div>
+          </div>
+          <div class="sort-bar-end">
+            <div class="select-wrapper">
+              <button class="filter-btn select transparent-btn" type="button">
+                <i data-feather="filter" aria-hidden="true"></i>
+                <span>Filter</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <table class="categories-table users-table">
+          <thead>
+            <tr class="users-table-info">
+              <th>
+                <label class="users-table__checkbox ms-20">
+                  <input type="checkbox" class="check-all">Thumbnail
+                </label>
+              </th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Slug</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="categories-table-img">
+                    <img src="./img/categories/01.jpg" alt="category">
+                  </div>
+                  About-us
+                </label>
+              </td>
+              <td>
+                Coaching
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>/lifestyle</td>
+              <td>17.04.2021</td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="categories-table-img">
+                    <img src="./img/categories/02.jpg" alt="category">
+                  </div>
+                  Home
+                </label>
+              </td>
+              <td>
+                Lifestyle
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>/lifestyle</td>
+              <td>17.04.2021</td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="categories-table-img">
+                    <img src="./img/categories/03.jpg" alt="category">
+                  </div>
+                  Services
+                </label>
+              </td>
+              <td>
+                Coaching
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>/lifestyle</td>
+              <td>17.04.2021</td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="categories-table-img">
+                    <img src="./img/categories/04.jpg" alt="category">
+                  </div>
+                  Portfolio
+                </label>
+              </td>
+              <td>
+                Lifestyle
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>/lifestyle</td>
+              <td>17.04.2021</td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="categories-table-img">
+                    <img src="./img/categories/01.jpg" alt="category">
+                  </div>
+                  Contact-us
+                </label>
+              </td>
+              <td>
+                Lifestyle
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>/lifestyle</td>
+              <td>17.04.2021</td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="categories-table-img">
+                    <img src="./img/categories/02.jpg" alt="category">
+                  </div>
+                  Team
+                </label>
+              </td>
+              <td>
+                Lifestyle
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>/lifestyle</td>
+              <td>17.04.2021</td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="categories-table-img">
+                    <img src="./img/categories/03.jpg" alt="category">
+                  </div>
+                  Our-misson
+                </label>
+              </td>
+              <td>
+                Lifestyle
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>/lifestyle</td>
+              <td>17.04.2021</td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="categories-table-img">
+                    <img src="./img/categories/04.jpg" alt="category">
+                  </div>
+                  Benefits
+                </label>
+              </td>
+              <td>
+                Lifestyle
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>/lifestyle</td>
+              <td>17.04.2021</td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label class="users-table__checkbox">
+                  <input type="checkbox" class="check">
+                  <div class="categories-table-img">
+                    <img src="./img/categories/01.jpg" alt="category">
+                  </div>
+                  Features
+                </label>
+              </td>
+              <td>
+                Lifestyle
+              </td>
+              <td>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</td>
+              <td>/lifestyle</td>
+              <td>17.04.2021</td>
+              <td>
+                <span class="p-relative">
+                  <button class="dropdown-btn transparent-btn" type="button" title="More info">
+                    <div class="sr-only">More info</div>
+                    <i data-feather="more-horizontal" aria-hidden="true"></i>
+                  </button>
+                  <ul class="users-item-dropdown dropdown">
+                    <li><a href="##">Edit</a></li>
+                    <li><a href="##">Quick edit</a></li>
+                    <li><a href="##">Trash</a></li>
+                  </ul>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination-wrapper">
+          <a class="pagination-prev disabled" href="##" title="Go to previous page"><i
+              data-feather="arrow-left"></i></a>
+          <ul class="pagination">
+            <li><a href="##">1</a></li>
+            <li><a href="##">2</a></li>
+            <li><a href="##">3</a></li>
+            <li><a href="##">4</a></li>
+            <li><a href="##">5</a></li>
+            <li><a href="##">...</a></li>
+            <li><a href="##">10</a></li>
+          </ul>
+          <a class="pagination-next" href="##" title="Go to next page"><i data-feather="arrow-right"></i></a>
+        </div>
+      </div>
+    </main>
+    <!-- ! Footer -->
+    @@include('_footer-content.html')
+  </div>
+</div>
+@@include('_footer-scripts.html')

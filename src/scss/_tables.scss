@@ -47,9 +47,15 @@
     }
 
     tbody {
-      font-size: 12px;
+      font-size: 14px;
 
       tr {
+        &.active {
+          td {
+            background-color: rgba(47, 73, 209, 0.1);
+          }
+        }
+
         &:last-child {
           .users-item-dropdown {
             bottom: 250%;

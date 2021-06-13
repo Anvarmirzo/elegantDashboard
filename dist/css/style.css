@@ -1234,6 +1234,10 @@ button {
   color: #d6d7e3;
 }
 
+.filter-btn svg {
+  margin-right: 6px;
+}
+
 /* Links */
 
 .link-info {
@@ -1417,7 +1421,11 @@ button {
 }
 
 .users-table tbody {
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.users-table tbody tr.active td {
+  background-color: rgba(47, 73, 209, 0.1);
 }
 
 .users-table tbody tr:last-child .users-item-dropdown {
@@ -2073,6 +2081,10 @@ button {
   margin-right: 0;
 }
 
+.sort-bar .filter-btn {
+  min-width: 106px;
+}
+
 .sort-bar-end {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2528,6 +2540,16 @@ button {
 
 .pages-table-img img {
   margin-right: 8px;
+}
+
+.categories-table-img {
+  margin-right: 26px;
+}
+
+.categories-table-img img {
+  width: 71px;
+  height: 47px;
+  border-radius: 6px;
 }
 
 @media (min-width: 576px) {

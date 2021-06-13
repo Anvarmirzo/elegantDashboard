@@ -6,28 +6,38 @@
       for (const checker of checkers) {
         if (checkAll.checked) {
           checker.checked = true;
+          checker.parentElement.parentElement.parentElement.classList.add(
+            'active'
+          );
         } else {
           checker.checked = false;
+          checker.parentElement.parentElement.parentElement.classList.remove(
+            'active'
+          );
         }
       }
     });
-  }
-  for (const checker of checkers) {
-    checker.addEventListener('change', function (e) {
-      if (!checker.checked) {
-        checkAll.checked = false;
-      }
-      let totalCheckbox = document.querySelectorAll('.users-table .check');
-      let totalChecked = document.querySelectorAll(
-        '.users-table .check:checked'
-      );
-      if (totalCheckbox && totalChecked) {
-        if (totalCheckbox.length == totalChecked.length) {
-          checkAll.checked = true;
-        } else {
+    for (const checker of checkers) {
+      checker.addEventListener('change', function (e) {
+        checker.parentElement.parentElement.parentElement.classList.toggle(
+          'active'
+        );
+
+        if (!checker.checked) {
           checkAll.checked = false;
         }
-      }
-    });
+        let totalCheckbox = document.querySelectorAll('.users-table .check');
+        let totalChecked = document.querySelectorAll(
+          '.users-table .check:checked'
+        );
+        if (totalCheckbox && totalChecked) {
+          if (totalCheckbox.length == totalChecked.length) {
+            checkAll.checked = true;
+          } else {
+            checkAll.checked = false;
+          }
+        }
+      });
+    }
   }
 })();
