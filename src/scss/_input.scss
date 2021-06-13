@@ -1,0 +1,26 @@
+input {
+  border-radius: 6px;
+  background-color: $input-bg;
+  border-width: 0;
+  min-height: 40px;
+  border: solid transparent 2px !important;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.43;
+    color: $placeholder;
+  }
+
+  &:focus {
+    outline: none;
+    border: $input-focus solid !important;
+    box-shadow: 0 0 0 2px $input-focus;
+  }
+}
+
+.tab-content {
+  input {
+    padding: 5px 16px;
+  }
+}

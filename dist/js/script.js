@@ -206,4 +206,41 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   })();
+
+  (function () {
+    var tabs = document.querySelectorAll('.tab-menu a');
+
+    if (tabs) {
+      var _iterator6 = _createForOfIteratorHelper(tabs),
+          _step6;
+
+      try {
+        for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
+          var tab = _step6.value;
+          tab.addEventListener('click', function (e) {
+            var _iterator7 = _createForOfIteratorHelper(tabs),
+                _step7;
+
+            try {
+              for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {
+                var _tab = _step7.value;
+
+                _tab.classList.remove('active');
+              }
+            } catch (err) {
+              _iterator7.e(err);
+            } finally {
+              _iterator7.f();
+            }
+
+            e.currentTarget.classList.add('active');
+          });
+        }
+      } catch (err) {
+        _iterator6.e(err);
+      } finally {
+        _iterator6.f();
+      }
+    }
+  })();
 });

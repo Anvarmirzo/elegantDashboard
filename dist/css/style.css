@@ -706,6 +706,10 @@ img {
   margin-left: 20px;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .p-relative {
   position: relative;
 }
@@ -1106,6 +1110,12 @@ button {
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
+  border: 2px solid transparent !important;
+}
+
+button:focus {
+  outline: none;
+  border-color: #AFBCFF !important;
 }
 
 .transparent-btn {
@@ -1159,6 +1169,24 @@ button {
 
 .primary-white-btn:hover {
   color: #4661F0;
+}
+
+.flat-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background-color: rgba(47, 73, 209, 0.1);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2f49d1;
 }
 
 .sidebar-toggle {
@@ -1263,6 +1291,12 @@ button {
 
 .link-info {
   color: #5887ff;
+  border-bottom: dashed 1px transparent;
+}
+
+.link-info:hover {
+  color: #5887ff;
+  border-bottom-color: #5887ff;
 }
 
 .dropdown {
@@ -1382,6 +1416,60 @@ button {
   line-height: 1.5;
   background-color: #FFFFFF;
   cursor: pointer;
+}
+
+input {
+  border-radius: 6px;
+  background-color: #eff0f6;
+  border-width: 0;
+  min-height: 40px;
+  border: solid transparent 2px !important;
+}
+
+input::-webkit-input-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2.43;
+  color: #d6d7e3;
+}
+
+input::-moz-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2.43;
+  color: #d6d7e3;
+}
+
+input:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2.43;
+  color: #d6d7e3;
+}
+
+input::-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2.43;
+  color: #d6d7e3;
+}
+
+input::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2.43;
+  color: #d6d7e3;
+}
+
+input:focus {
+  outline: none;
+  border: rgba(134, 182, 254, 0.5) solid !important;
+  -webkit-box-shadow: 0 0 0 2px rgba(134, 182, 254, 0.5);
+  box-shadow: 0 0 0 2px rgba(134, 182, 254, 0.5);
+}
+
+.tab-content input {
+  padding: 5px 16px;
 }
 
 .users {
@@ -2054,6 +2142,105 @@ button {
   visibility: visible;
 }
 
+.tab-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.tab-menu li {
+  margin-right: 20px;
+}
+
+.tab-menu li:last-child {
+  margin-right: 0;
+}
+
+.tab-menu a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(17, 17, 17, 0.48);
+  border-bottom: 2px solid transparent;
+}
+
+.tab-menu a:active,
+.tab-menu a:focus {
+  color: #526eff;
+  border-bottom-color: #526eff;
+  outline-width: 0;
+}
+
+.tab-menu a.active {
+  color: #526eff;
+  border-bottom-color: #526eff;
+}
+
+.tab-content {
+  padding-top: 40px;
+}
+
+.tab-content:not(:target) {
+  display: none;
+}
+
+.tab-form__label {
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2.43;
+  color: #000000;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.tab-form input {
+  width: 100%;
+}
+
+.tab-form .select {
+  width: 100%;
+}
+
+.tab-form-end {
+  color: #b9b9b9;
+}
+
+.tab-form-end img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.tab-form-end__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  margin-bottom: 10px;
+}
+
+.tab-form-end table {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  border-collapse: collapse;
+}
+
+.tab-form-end table td {
+  padding-bottom: 10px;
+  padding-right: 23px;
+}
+
 .sort-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2571,6 +2758,14 @@ button {
   width: 71px;
   height: 47px;
   border-radius: 6px;
+}
+
+.posts-table__primary-text {
+  color: #2f49d1;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
 }
 
 .posts-table__primary-text {

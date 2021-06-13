@@ -1,0 +1,118 @@
+@@include('_head.html',{
+'title': 'Appearance-01'
+})
+<!-- ! Body -->
+<a class="skip-link sr-only" href="#skip-target">Skip to content</a>
+<div class="page-flex">
+  <!-- ! Sidebar -->
+  @@include('_aside.html')
+  <div class="main-wrapper">
+    <!-- ! Main nav -->
+    @@include('_main-nav.html')
+    <!-- ! Main -->
+    <main class="main" id="skip-target">
+      <div class="container">
+        <h2 class="main-title">Appearance</h2>
+        <div class="main-content">
+          <!-- ! Tab nav -->
+          <nav class="tab-nav">
+            <ul class="tab-menu">
+              <li><a href="#general" class="active">General</a></li>
+              <li><a href="#widgets">Widgets</a></li>
+              <li><a href="#menus">Menus</a></li>
+              <li><a href="#editor">Theme editor</a></li>
+            </ul>
+          </nav>
+          <!-- ! Tab content -->
+          <article class="tab-content" id="general">
+            <form class="row tab-form">
+              <!-- ! Start content -->
+              <div class="col-lg-8 tab-form-start">
+                <div class="row">
+                  <div class="col-lg-5 mb-20">
+                    <label>
+                      <span class="tab-form__label">Website name</span>
+                      <input type="text" placeholder="Enter website name">
+                    </label>
+                  </div>
+                  <div class="col-lg-7 mb-20">
+                    <label>
+                      <span class="tab-form__label">Website description</span>
+                      <input type="text" placeholder="Enter website description">
+                    </label>
+                  </div>
+                  <div class="col-xl-5 col-xxl-4">
+                    <span class="tab-form__label">Website main language</span>
+                    <div class="select-wrapper">
+                      <button class="select transparent-btn" type="button">
+                        <span>Select main language</span>
+                        <i data-feather="chevron-down" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-xxl-4">
+                    <span class="tab-form__label">Default user role</span>
+                    <div class="select-wrapper">
+                      <button class="select transparent-btn" type="button">
+                        <span>Author</span>
+                        <i data-feather="chevron-down" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-xxl-4">
+                    <span class="tab-form__label">Cache clear time</span>
+                    <div class="select-wrapper">
+                      <button class="select transparent-btn" type="button">
+                        <span>Every 24 hour</span>
+                        <i data-feather="chevron-down" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ! End content -->
+              <div class="col-lg-4 tab-form-end">
+                <img src="./img/svg/image-frame.svg" alt="user-pic">
+                <p class="tab-form-end__title">Sunshine theme lite</p>
+                <table>
+                  <tr>
+                    <td>Version:</td>
+                    <td><span>4.9</span></td>
+                  </tr>
+                  <tr>
+                    <td>Author:</td>
+                    <td><span>Nicolay Artur</span></td>
+                  </tr>
+                  <tr>
+                    <td>Website:</td>
+                    <td><a href="##" class="link-info ">www.theme.site</a></td>
+                  </tr>
+                  <tr>
+                    <td>Last update:</td>
+                    <td><span>04.05.2021</span></td>
+                  </tr>
+                  <tr>
+                    <td><button class="flat-btn transparent-btn" type="button">Customize</button></td>
+                    <td><button class="flat-btn transparent-btn" type="button">Change</button></td>
+                  </tr>
+                </table>
+              </div>
+            </form>
+          </article>
+          <article class="tab-content" id="widgets">
+            <h2>2</h2>
+          </article>
+          <article class="tab-content" id="menus">
+            <h2>3</h2>
+          </article>
+          <article class="tab-content" id="editor">
+            <h2>4</h2>
+          </article>
+        </div>
+      </div>
+    </main>
+    <!-- ! Footer -->
+    @@include('_footer-content.html')
+  </div>
+</div>
+@@include('_footer-scripts.html')

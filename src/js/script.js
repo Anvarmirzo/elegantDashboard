@@ -6,4 +6,5 @@ document.addEventListener('DOMContentLoaded', function() {
   @@include('_lang-switcher.js')
   @@include('_users-dropdown.js')
   @@include('_checkbox.js')
+  @@include('_tab-menu.js')
 });

@@ -2,6 +2,12 @@
 button {
   cursor: pointer;
   transition: 0.3s all;
+  border: 2px solid transparent !important;
+
+  &:focus {
+    outline: none;
+    border-color: #AFBCFF !important;
+  }
 }
 
 .transparent-btn {
@@ -41,6 +47,19 @@ button {
   &:hover {
     color: #4661F0;
   }
+}
+
+.flat-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background-color: rgba(47, 73, 209, 0.1);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $primary-color;
 }
 
 .sidebar-toggle {
@@ -120,4 +139,10 @@ button {
 /* Links */
 .link-info {
   color: $info-color;
+  border-bottom: dashed 1px transparent;
+
+  &:hover {
+    color: $info-color;
+    border-bottom-color: $info-color;
+  }
 }
