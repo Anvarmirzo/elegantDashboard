@@ -110,6 +110,13 @@ button {
   }
 }
 
+.sort-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* Links */
 .link-info {
   color: $info-color;

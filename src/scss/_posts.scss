@@ -1,0 +1,11 @@
+.posts {
+  &-table {
+    &__primary-text {
+      color: $primary-color;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: -0.3px;
+    }
+  }
+}

@@ -1027,6 +1027,13 @@ body {
   height: 24px;
 }
 
+.arrows-up-down {
+  background-image: url(../img/svg/Bulk/Arrows-up-down.svg);
+  width: 10px;
+  height: 17px;
+  margin-left: 10px;
+}
+
 .search-wrapper svg {
   stroke: #D6D7E3;
   position: absolute;
@@ -1236,6 +1243,20 @@ button {
 
 .filter-btn svg {
   margin-right: 6px;
+}
+
+.sort-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 /* Links */
@@ -2550,6 +2571,14 @@ button {
   width: 71px;
   height: 47px;
   border-radius: 6px;
+}
+
+.posts-table__primary-text {
+  color: #2f49d1;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
 }
 
 @media (min-width: 576px) {
