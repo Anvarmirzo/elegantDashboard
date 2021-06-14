@@ -33,6 +33,10 @@ input {
     border: $input-focus solid !important;
     box-shadow: 0 0 0 2px $input-focus;
   }
+
+  &:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-calendar-picker-indicator {
+    display: none !important;
+  }
 }
 
 .check {
@@ -55,6 +59,7 @@ textarea {
   border-width: 2px;
   border-color: transparent;
   min-height: 134px;
+  max-width: 100%;
   padding: 5px 16px;
 
   &::placeholder {
@@ -94,4 +99,8 @@ textarea {
 label {
   width: max-content;
   cursor: pointer;
+}
+
+.tags-input {
+  padding: 5px 16px;
 }

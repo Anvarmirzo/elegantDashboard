@@ -702,6 +702,10 @@ img {
   outline-width: 3px;
 }
 
+.me-11 {
+  margin-right: 11px;
+}
+
 .ms-20 {
   margin-left: 20px;
 }
@@ -763,6 +767,8 @@ img {
 
 .white-block.checkboxes input {
   margin-right: 12px;
+  width: 16px;
+  height: 16px;
 }
 
 .white-block.checkboxes span {
@@ -1106,6 +1112,12 @@ body {
   height: 24px;
 }
 
+.thumbnail {
+  background-image: url(../img/svg/thumbnail.svg);
+  width: 60px;
+  height: 60px;
+}
+
 .search-wrapper svg {
   stroke: #D6D7E3;
   position: absolute;
@@ -1184,6 +1196,24 @@ button {
 button:focus {
   outline: none;
   border-color: #AFBCFF !important;
+}
+
+button.disabled {
+  cursor: default;
+  color: #d6d7e3;
+}
+
+button.disabled:hover {
+  color: #d6d7e3;
+}
+
+button.disabled:focus {
+  border-color: transparent !important;
+  outline: none;
+}
+
+.main-btns-wrapper button {
+  line-height: 1.5;
 }
 
 .transparent-btn {
@@ -1376,6 +1406,32 @@ button:focus {
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.tag-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.67;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #d6d7e3;
+  padding: 2px 8px;
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+}
+
+.tag-btn svg {
+  margin-left: 8px;
+  width: 16px;
+  height: 16px;
 }
 
 /* Links */
@@ -1574,6 +1630,10 @@ input:focus {
   box-shadow: 0 0 0 2px rgba(134, 182, 254, 0.5);
 }
 
+input:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
 .check {
   position: relative;
   display: -webkit-box;
@@ -1597,6 +1657,7 @@ textarea {
   border-width: 2px;
   border-color: transparent;
   min-height: 134px;
+  max-width: 100%;
   padding: 5px 16px;
 }
 
@@ -1667,6 +1728,10 @@ label {
   width: -moz-max-content;
   width: max-content;
   cursor: pointer;
+}
+
+.tags-input {
+  padding: 5px 16px;
 }
 
 .users {
@@ -3102,6 +3167,113 @@ label {
   color: #b9b9b9;
   cursor: pointer;
   margin-bottom: 11px;
+}
+
+.new-post-main .main-btns-wrapper .primary-white-btn {
+  color: #d6d7e3;
+}
+
+.new-post-main .tags-input {
+  margin-bottom: 10px;
+}
+
+.new-post-main .tag-btn {
+  margin-right: 12px;
+  margin-bottom: 6px;
+}
+
+.tags-title {
+  font-size: 12px;
+  line-height: 2;
+  color: #b9b9b9;
+}
+
+.tags-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dropzone-wrapper {
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 150px;
+  background-color: #FFFFFF;
+  border: 1px dashed #A0A3BD;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.dropzone-start {
+  position: absolute;
+  text-align: center;
+}
+
+.dropzone .thumbnail {
+  margin-bottom: 10px;
+}
+
+.dropzone-hint {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: 0.75px;
+  color: #d6d7e3;
+}
+
+.dz-error-message,
+.dz-success-mark,
+.dz-error-mark {
+  display: none;
+}
+
+.dz-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  width: 90%;
+  height: 90%;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: 0.75px;
+  color: #d6d7e3;
+  text-align: center;
+}
+
+.dz-preview img {
+  width: 60px;
+  height: 60px;
 }
 
 @media (min-width: 576px) {

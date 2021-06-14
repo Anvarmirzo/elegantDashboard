@@ -1,0 +1,109 @@
+@@include('_head.html',{
+'title': 'Add new post'
+})
+<!-- ! Body -->
+<a class="skip-link sr-only" href="#skip-target">Skip to content</a>
+<div class="page-flex">
+  <!-- ! Sidebar -->
+  @@include('_aside.html')
+  <div class="main-wrapper">
+    <!-- ! Main nav -->
+    @@include('_main-nav.html')
+    <!-- ! Main -->
+    <main class="main new-post-main" id="skip-target">
+      <div class="container">
+        <form action="">
+          <div class="main-title-wrapper">
+            <h2 class="main-title">Add new post</h2>
+            <div class="main-btns-wrapper">
+              <button class="primary-white-btn" type="button">
+                <span class="me-11">English</span>
+                <i data-feather="chevron-down" aria-hidden="true"></i>
+              </button>
+              <button class="primary-white-btn" type="button">Preview</button>
+              <button class="primary-default-btn">Save to draft</button>
+              <button class="primary-white-btn" type="button"><i data-feather="x"></i>Cancel</button>
+            </div>
+          </div>
+          <div class="row new-page__row">
+            <div class="col-xl-5 col-md-6">
+              <div class="main-content new-page-content">
+                <label>
+                  <span class="new-page-label">Title</span>
+                  <input required type="text" placeholder="Enter page title">
+                </label>
+                <label>
+                  <span class="new-page-label">Description</span>
+                  <textarea required class="resize-none" type="text" placeholder="Enter page description"></textarea>
+                </label>
+                <label>
+                  <span class="new-page-label">Content</span>
+                  <textarea required class="content-textarea" type="text" placeholder="Enter page content"></textarea>
+                </label>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="white-block checkboxes">
+                <p class="white-block__title">Categories</p>
+                <label>
+                  <input type="checkbox" name="staus">
+                  <span>Lifestyle</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="staus">
+                  <span>Sport</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="staus">
+                  <span>Technology</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="staus">
+                  <span>Education</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="staus">
+                  <span>Tips and Tricks</span>
+                </label>
+                <label>
+                  <input type="checkbox" name="staus">
+                  <span>Businnes</span>
+                </label>
+              </div>
+              <div class="white-block">
+                <p class="white-block__title">Tags</p>
+                <input class="tags-input" type="text" placeholder="Type something" list="tags" multiple>
+                <datalist id="tags">
+                  <option value="Learning"></option>
+                  <option value="Sport"></option>
+                  <option value="Lifestyle"></option>
+                  <option value="Coaching"></option>
+                </datalist>
+                <p class="tags-title">Choose from the most used tags</p>
+                <div class="tags-list">
+                  <button class="tag-btn" type="button">Learning <i data-feather="x"></i></button>
+                  <button class="tag-btn" type="button">Sport <i data-feather="x"></i></button>
+                  <button class="tag-btn" type="button">Lifestyle <i data-feather="x"></i></button>
+                  <button class="tag-btn" type="button">Coaching <i data-feather="x"></i></button>
+                </div>
+              </div>
+              <div class="white-block">
+                <p class="white-block__title">Tags</p>
+                <div class="dropzone-wrapper" id="dropzone">
+                  <div class="dropzone-start">
+                    <span class="icon thumbnail" aria-hidden="true"></span>
+                    <p class="dropzone-hint">Drop files to upload or
+                  </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- ! Footer -->
+    @@include('_footer-content.html')
+  </div>
+</div>
+@@include('_footer-scripts.html')

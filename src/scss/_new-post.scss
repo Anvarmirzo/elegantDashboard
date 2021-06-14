@@ -1,0 +1,28 @@
+.new-post-main {
+  .main-btns-wrapper {
+    .primary-white-btn {
+      color: $placeholder;
+    }
+  }
+
+  .tags-input {
+    margin-bottom: 10px;
+  }
+
+  .tag-btn {
+    margin-right: 12px;
+    margin-bottom: 6px;
+  }
+}
+
+.tags-title {
+  font-size: 12px;
+  line-height: 2;
+  color: $label;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

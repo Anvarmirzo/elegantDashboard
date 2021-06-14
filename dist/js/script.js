@@ -262,4 +262,9 @@ document.addEventListener('DOMContentLoaded', function () {
   } finally {
     _iterator8.f();
   }
+
+  Dropzone.autoDiscover = false;
+  var myDropzone = new Dropzone('#dropzone', {
+    url: '/file/post'
+  });
 });

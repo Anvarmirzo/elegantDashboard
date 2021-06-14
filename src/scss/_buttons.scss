@@ -8,6 +8,26 @@ button {
     outline: none;
     border-color: #AFBCFF !important;
   }
+
+  &.disabled {
+    cursor: default;
+    color: $placeholder;
+
+    &:hover {
+      color: $placeholder;
+    }
+
+    &:focus {
+      border-color: transparent !important;
+      outline: none;
+    }
+  }
+}
+
+.main-btns-wrapper {
+  button {
+    line-height: 1.5;
+  }
 }
 
 .transparent-btn {
@@ -150,6 +170,26 @@ button {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.tag-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.67;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $placeholder;
+  padding: 2px 8px;
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  border-radius: 4px;
+
+  svg {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+  }
 }
 
 /* Links */
