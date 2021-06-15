@@ -2839,7 +2839,7 @@ label {
 
 .chart {
   width: 100%;
-  max-height: 370px;
+  height: 370px;
   margin-bottom: 20px;
   -webkit-box-shadow: 0px 15px 50px 0px rgba(160, 163, 189, 0.1);
   box-shadow: 0px 15px 50px 0px rgba(160, 163, 189, 0.1);
@@ -4118,6 +4118,13 @@ label {
 @media (max-width: 1304px) {
   .select {
     padding: 6px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .chart {
+    height: auto;
+    max-height: 370px;
   }
 }
 
