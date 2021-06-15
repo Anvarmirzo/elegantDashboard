@@ -40,3 +40,18 @@
     }
   }
 }
+
+.folder-list {
+  svg {
+    color: $warning-color;
+    fill: $warning-color;
+  }
+}
+
+.files-item__img {
+  svg {
+    color: #fff;
+    width: 27px;
+    height: 27px;
+  }
+}
