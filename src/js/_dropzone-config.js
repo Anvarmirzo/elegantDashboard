@@ -1,2 +1,5 @@
 Dropzone.autoDiscover = false;
-var myDropzone = new Dropzone('#dropzone', { url: '/file/post' });
+const dropzoneID = document.getElementById('dropzone');
+if (dropzoneID) {
+  var myDropzone = new Dropzone(dropzoneID, { url: '/file/post' });
+}

@@ -9,4 +9,5 @@ document.addEventListener('DOMContentLoaded', function() {
   @@include('_tab-menu.js')
   @@include('_drag-and-drop.js')
   @@include('_dropzone-config.js')
+  @@include('_chart-config.js')
 });
