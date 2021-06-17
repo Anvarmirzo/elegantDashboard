@@ -1,0 +1,100 @@
+@@include('_head.html',{
+'title': 'Media Library-01'
+})
+<!-- ! Body -->
+<a class="skip-link sr-only" href="#skip-target">Skip to content</a>
+<div class="page-flex">
+  <!-- ! Sidebar -->
+  @@include('_aside.html')
+  <div class="main-wrapper">
+    <!-- ! Main nav -->
+    @@include('_main-nav.html')
+    <!-- ! Main -->
+    <main class="main" id="skip-target">
+      <div class="container">
+        <h2 class="main-title">Media Library</h2>
+        <div class="media-content">
+          <div class="row">
+            <div class="col-lg-3">
+              <h3 class="media-sidebar__title">Quick links</h3>
+              <div class="media-sidebar">
+                <ul class="quick-links">
+                  <li>
+                    <a class="info" href="##">
+                      <div class="quick-links-icon">
+                        <span class="icon time-circle" aria-hidden="true"></span>
+                      </div>
+                      <div class="quick-links-text">
+                        <span class="quick-links__title">Recent files</span>
+                        <span class="quick-links__subtitle">Recent uploaded files</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="success" href="##">
+                      <div class="quick-links-icon">
+                        <span class="icon google-drive" aria-hidden="true"></span>
+                      </div>
+                      <div class="quick-links-text">
+                        <span class="quick-links__title">Google Drive</span>
+                        <span class="quick-links__subtitle">Media files from Google</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="primary" href="##">
+                      <div class="quick-links-icon">
+                        <span class="icon dropbox" aria-hidden="true"></span>
+                      </div>
+                      <div class="quick-links-text">
+                        <span class="quick-links__title">Dropbox</span>
+                        <span class="quick-links__subtitle">Media files from Dropbox</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="warning" href="##">
+                      <div class="quick-links-icon">
+                        <span class="icon star" aria-hidden="true"></span>
+                      </div>
+                      <div class="quick-links-text">
+                        <span class="quick-links__title">Starred files</span>
+                        <span class="quick-links__subtitle">Recent uploaded files</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="danger" href="##">
+                      <div class="quick-links-icon">
+                        <span class="icon delete" aria-hidden="true"></span>
+                      </div>
+                      <div class="quick-links-text">
+                        <span class="quick-links__title">Trashed files</span>
+                        <span class="quick-links__subtitle">Recent uploaded files</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="storage">
+                  <span class="storage__indicator">Free</span>
+                  <h4 class="storage__title">Storage</h4>
+                  <div class="progress">
+                    <div class="progress-bar fill-25" role="progressbar"></div>
+                  </div>
+                  <p class="storage__info">4.06 GB (32%) of 15 GB used</p>
+                </div>
+                <div class="upgrade">
+                  <p>Upgrade to <b>PRO</b> for get unlimited storage.</p>
+                  <a class="upgrade-btn" href="##">Upgrade now <i data-feather="chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ! Footer -->
+    @@include('_footer-content.html')
+  </div>
+</div>
+@@include('_footer-scripts.html')
