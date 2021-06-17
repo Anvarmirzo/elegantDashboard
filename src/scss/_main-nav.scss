@@ -6,6 +6,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  a {
+    &:focus {
+      outline: none;
+    }
+  }
+
   &--bg {
     background-color: #fff;
   }
@@ -44,7 +50,97 @@
         display: initial;
       }
     }
+
+    &-wrapper {
+      position: relative;
+    }
+
+    &-dropdown {
+      right: 0;
+      width: 236px;
+      padding: 10px;
+
+      &-text {
+        display: flex;
+        flex-direction: column;
+        width: 167px;
+      }
+
+      &__title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.22;
+        color: $title-active;
+        margin-bottom: 5px;
+      }
+
+      &__subtitle {
+        font-size: 10px;
+        line-height: 1.2;
+        color: $body;
+      }
+
+      &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+        &.info {
+          background-color: rgba(88, 135, 255, 0.1);
+          color: $info-color;
+        }
+
+        &.danger {
+          background-color: rgba(242, 100, 100, 0.1);
+          color: $danger-color;
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 10px;
+        padding-top: 15px;
+
+        &.link-to-page {
+          padding-top: 17px;
+          justify-content: center;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 15px;
+          color: $info-color;
+        }
+      }
+    }
   }
+
+  .nav-user-wrapper {
+    position: relative;
+
+    .users-item-dropdown {
+      width: 171px;
+      right: 0;
+
+      svg {
+        margin-right: 13px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+
+        &.danger {
+          color: $danger-color;
+        }
+      }
+    }
+  }
+
 
   .nav-user-img {
     border-radius: 50%;
@@ -62,6 +158,8 @@
     }
   }
 }
+
+
 
 .search-wrapper {
   position: relative;

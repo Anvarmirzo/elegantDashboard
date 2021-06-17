@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (sidebarBtn) {
       sidebarBtn.addEventListener('click', function () {
+        sidebarBtn.classList.toggle('rotated');
         sidebar.classList.toggle('hidden');
         catSubMenu.classList.remove('visible');
       });

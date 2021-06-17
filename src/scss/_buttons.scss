@@ -110,6 +110,10 @@ button {
   &:hover {
     opacity: 1;
   }
+
+  &.rotated {
+    transform: rotate(180deg);
+  }
 }
 
 .category__btn {
@@ -155,8 +159,12 @@ button {
   opacity: 0.5;
 }
 
+.nav-user-btn {
+  background-color: transparent;
+}
+
 .extentions-btn {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #EEEEEE !important;
   border-radius: 4px;
   background-color: transparent;
   padding: 5px 20px;

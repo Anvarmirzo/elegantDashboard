@@ -4,6 +4,7 @@
   const sidebarBtn = document.querySelector('.sidebar-toggle');
   if (sidebarBtn) {
     sidebarBtn.addEventListener('click', () => {
+      sidebarBtn.classList.toggle('rotated');
       sidebar.classList.toggle('hidden');
       catSubMenu.classList.remove('visible');
     });

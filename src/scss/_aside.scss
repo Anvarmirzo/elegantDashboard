@@ -8,6 +8,12 @@
   transition: 0.3s all;
   min-height: 100vh;
 
+  a {
+    &:focus {
+      outline: none;
+    }
+  }
+
   &.hidden {
     width: 64px;
     padding-right: 4px;
