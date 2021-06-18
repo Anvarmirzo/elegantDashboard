@@ -12,13 +12,14 @@
 })();
 
 (function () {
-  const showCatBtn = document.querySelector('.category__btn');
+  const showCatBtn = document.querySelector('.show-cat-btn');
   const catSubMenu = document.querySelector('.cat-sub-menu');
   if (showCatBtn) {
     showCatBtn.addEventListener('click', function (e) {
+      e.preventDefault();
       catSubMenu.classList.toggle('visible');
-      console.log(showCatBtn.style.transform);
-      showCatBtn.classList.toggle('rotated');
+      const catBtnToRotate = document.querySelector('.category__btn');
+      catBtnToRotate.classList.toggle('rotated');
     });
   }
 })();

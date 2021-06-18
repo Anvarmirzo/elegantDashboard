@@ -22,7 +22,6 @@
         checker.parentElement.parentElement.parentElement.classList.toggle(
           'active'
         );
-
         if (!checker.checked) {
           checkAll.checked = false;
         }
@@ -37,6 +36,27 @@
             checkAll.checked = false;
           }
         }
+      });
+    }
+  }
+})();
+(function () {
+  const checkAll = document.querySelector('.check-all');
+  const checkers = document.querySelectorAll('.check');
+  const checkedSum = document.querySelector('.checked-sum');
+  if (checkedSum && checkAll && checkers) {
+    checkAll.addEventListener('change', function (e) {
+      let totalChecked = document.querySelectorAll(
+        '.users-table .check:checked'
+      );
+      checkedSum.textContent = totalChecked.length;
+    });
+    for (const checker of checkers) {
+      checker.addEventListener('change', function (e) {
+        let totalChecked = document.querySelectorAll(
+          '.users-table .check:checked'
+        );
+        checkedSum.textContent = totalChecked.length;
       });
     }
   }

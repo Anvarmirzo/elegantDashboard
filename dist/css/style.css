@@ -875,9 +875,7 @@ body {
 
 .main-wrapper {
   position: relative;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  width: 100%;
 }
 
 .footer {
@@ -2031,7 +2029,7 @@ label {
   flex-wrap: wrap;
 }
 
-.library-table-sum span {
+.library-table-sum p {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -2114,6 +2112,10 @@ label {
 }
 
 .sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2760,6 +2762,7 @@ label {
   line-height: 1.5;
   color: rgba(17, 17, 17, 0.48);
   border-bottom: 2px solid transparent;
+  padding-bottom: 14px;
 }
 
 .tab-menu a:active,
@@ -3026,7 +3029,6 @@ label {
   -webkit-box-shadow: 0px 15px 50px rgba(160, 163, 189, 0.1);
   box-shadow: 0px 15px 50px rgba(160, 163, 189, 0.1);
   border-radius: 10px;
-  padding: 20px;
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
@@ -3795,7 +3797,7 @@ label {
 }
 
 .new-post-main .main-btns-wrapper .primary-white-btn {
-  color: #d6d7e3;
+  color: #676a8e;
 }
 
 .new-post-main .tags-input {
