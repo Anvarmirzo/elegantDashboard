@@ -89,3 +89,27 @@
     }
   }
 }
+
+.library-table {
+  margin-bottom: 20px;
+
+  &-name {
+    display: flex;
+    align-items: center;
+  }
+
+  &-sum {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.4;
+      letter-spacing: 0.2px;
+      color: $label;
+    }
+  }
+}

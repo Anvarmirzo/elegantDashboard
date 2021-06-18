@@ -44,7 +44,12 @@ input {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 15px;
+}
+
+.white-block {
+  .check {
+    margin-bottom: 15px;
+  }
 }
 
 .tab-content {

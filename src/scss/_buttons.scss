@@ -2,7 +2,7 @@
 button {
   cursor: pointer;
   transition: 0.3s all;
-  border: 2px solid transparent !important;
+  border: 2px solid transparent;
 
   &:focus {
     outline: none;
@@ -247,6 +247,17 @@ button {
     margin-left: 10px;
 
   }
+}
+
+.media-table-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #EEEEEE;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $label;
+
 }
 
 /* Links */

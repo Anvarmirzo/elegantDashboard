@@ -179,6 +179,10 @@
   padding-right: 20px;
   border-right: 2px solid #EEEEEE;
 
+  &__title {
+    font-size: 18px;
+  }
+
   a {
     &:focus {
       outline: none;

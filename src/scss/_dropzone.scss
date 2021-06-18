@@ -59,3 +59,25 @@
     height: 60px;
   }
 }
+
+.media-dropzone {
+  padding: 17px 20px;
+  border-radius: 10px;
+  background-color: $input-bg;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    line-height: 1.22;
+    color: $body;
+    margin-bottom: 51px;
+  }
+
+  .dropzone-wrapper {
+    background-color: transparent;
+  }
+}

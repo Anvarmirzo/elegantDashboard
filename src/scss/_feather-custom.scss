@@ -55,3 +55,46 @@
     height: 27px;
   }
 }
+
+.library-table-name {
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 2px 3px;
+    margin-right: 5px;
+    border-radius: 3px;
+    color: #fff;
+
+    &.info {
+      background-color: $info-color;
+    }
+
+    &.danger {
+      background-color: $danger-color;
+    }
+
+    &.warning {
+      background-color: $warning-color;
+    }
+
+    &.success {
+      background-color: $success-color;
+    }
+
+    &.purple {
+      background-color: $purple-bg;
+    }
+  }
+}
+
+.dropzone-start {
+  svg {
+    width: 60px;
+    height: 60px;
+    color: $placeholder;
+    stroke-width: 1px;
+  }
+}
