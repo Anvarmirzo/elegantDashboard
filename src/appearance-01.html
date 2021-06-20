@@ -112,42 +112,52 @@
                         settings,
                         drag it back.</p>
                     </div>
-                    <div class="row draggable__row">
-                      <div class="col-lg-6">
-                        <div class="draggable">
-                          <div>
-                            <p class="draggable__title">Search</p>
-                            <p class="draggable__subtitle">A search form for your site.</p>
-                          </div>
-                          <span class="icon move" aria-hidden="true"></span>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="draggable">
-                          <div>
-                            <p class="draggable__title">Search</p>
-                            <p class="draggable__subtitle">A search form for your site.</p>
-                          </div>
-                          <span class="icon move" aria-hidden="true"></span>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="draggable">
-                          <div>
-                            <p class="draggable__title">Search</p>
-                            <p class="draggable__subtitle">A search form for your site.</p>
-                          </div>
-                          <span class="icon move" aria-hidden="true"></span>
-                        </div>
-                      </div>
+                  </div>
+                </div>
+                <div class="row draggable__row drag-zone">
+                  <!-- Draggable item -->
+                  <article class="draggable" draggable="true" data-item="1">
+                    <div>
+                      <p class="draggable__title">Search</p>
+                      <p class="draggable__subtitle">A search form for your site.</p>
                     </div>
+                    <span class="icon move" aria-hidden="true"></span>
+                  </article>
+                  <!-- Draggable item -->
+                  <div class="draggable" draggable="true" data-item="2">
+                    <div>
+                      <p class="draggable__title">Categories</p>
+                      <p class="draggable__subtitle">A list or dropdown of categories.</p>
+                    </div>
+                    <span class="icon move" aria-hidden="true"></span>
+                  </div>
+                  <!-- Draggable item -->
+                  <div class="draggable" draggable="true" data-item="3">
+                    <div>
+                      <p class="draggable__title">Archives</p>
+                      <p class="draggable__subtitle">A monthly archive of your site’s Posts.</p>
+                    </div>
+                    <span class="icon move" aria-hidden="true"></span>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
-                <article class="appearance-sidebar">
+                <!-- Drag target -->
+                <article class="appearance-sidebar drag-zone">
                   <div class="appearance-sidebar-title">
                     <h3>Sidebar</h3>
+                    <p>Add widgets here to appear in your sidebar.</p>
+                  </div>
+                </article>
+                <article class="appearance-sidebar drag-zone">
+                  <div class="appearance-sidebar-title">
+                    <h3>Header</h3>
+                    <p>Add widgets here to appear in your sidebar.</p>
+                  </div>
+                </article>
+                <article class="appearance-sidebar drag-zone">
+                  <div class="appearance-sidebar-title">
+                    <h3>Footer</h3>
                     <p>Add widgets here to appear in your sidebar.</p>
                   </div>
                 </article>
@@ -156,7 +166,92 @@
           </article>
           <!-- Menus -->
           <article class="tab-content" id="menus">
-            <h2>3</h2>
+            <div class="drag__title">
+              <h3>Available Widgets</h3>
+              <p>To activate a widget drag it to a sidebar or click on it. To deactivate a widget and delete its
+                settings,
+                drag it back.</p>
+            </div>
+            <div class="drag-top-navbar drag-zone">
+              <div class="drag__title">
+                <h3>Top navbar</h3>
+                <p>Add widgets here to appear in your sidebar.</p>
+              </div>
+            </div>
+            <div class="row menus__row">
+              <div class="col-lg-4">
+                <div class="drag-zone">
+                  <div class="drag__title drag__title--margin">
+                    <h3>Pages</h3>
+                    <p>All dynamic pages</p>
+                  </div>
+                  <!-- Draggable item -->
+                  <article class="draggable" draggable="true" data-item="1">
+                    <div>
+                      <p class="draggable__title">Home</p>
+                      <p class="draggable__subtitle">A search form for your site.</p>
+                    </div>
+                    <span class="icon move" aria-hidden="true"></span>
+                  </article>
+                  <!-- Draggable item -->
+                  <article class="draggable" draggable="true" data-item="1">
+                    <div>
+                      <p class="draggable__title">Search</p>
+                      <p class="draggable__subtitle">A search form for your site.</p>
+                    </div>
+                    <span class="icon move" aria-hidden="true"></span>
+                  </article>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="drag-zone">
+                  <div class="drag__title drag__title--margin">
+                    <h3>Articles</h3>
+                    <p>All dynamic pages</p>
+                  </div>
+                  <!-- Draggable item -->
+                  <article class="draggable" draggable="true" data-item="1">
+                    <div>
+                      <p class="draggable__title">Blog</p>
+                      <p class="draggable__subtitle">A search form for your site.</p>
+                    </div>
+                    <span class="icon move" aria-hidden="true"></span>
+                  </article>
+                  <!-- Draggable item -->
+                  <article class="draggable" draggable="true" data-item="1">
+                    <div>
+                      <p class="draggable__title">About us</p>
+                      <p class="draggable__subtitle">A search form for your site.</p>
+                    </div>
+                    <span class="icon move" aria-hidden="true"></span>
+                  </article>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="drag-zone">
+                  <div class="drag__title drag__title--margin">
+                    <h3>Categories</h3>
+                    <p>All dynamic pages</p>
+                  </div>
+                  <!-- Draggable item -->
+                  <article class="draggable" draggable="true" data-item="1">
+                    <div>
+                      <p class="draggable__title">Search</p>
+                      <p class="draggable__subtitle">A search form for your site.</p>
+                    </div>
+                    <span class="icon move" aria-hidden="true"></span>
+                  </article>
+                  <!-- Draggable item -->
+                  <article class="draggable" draggable="true" data-item="1">
+                    <div>
+                      <p class="draggable__title">Search</p>
+                      <p class="draggable__subtitle">A search form for your site.</p>
+                    </div>
+                    <span class="icon move" aria-hidden="true"></span>
+                  </article>
+                </div>
+              </div>
+            </div>
           </article>
           <!-- Editor -->
           <article class="tab-content" id="editor">
@@ -173,7 +268,7 @@
   // Choose the default section on page load
   // And scroll to the top to show nav
   window.onload = function () {
-    window.location.hash = 'widgets'
+    window.location.hash = 'menus'
     document.documentElement.scrollTop = 0
   }
 </script>

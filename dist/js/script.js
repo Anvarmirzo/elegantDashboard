@@ -277,23 +277,95 @@ document.addEventListener('DOMContentLoaded', function () {
   })();
 
   (function () {
-    var displace = window.displacejs;
-    var elements = document.querySelectorAll('.draggable');
-    var options = {// constrain: true,
-    };
+    var dragItems = document.querySelectorAll('.draggable');
+    var dropZones = document.querySelectorAll('.drag-zone');
+    var draggedItem = null;
+    var droppedItem = null;
+    dragItems.forEach(function (dragItem) {
+      dragItem.addEventListener('dragstart', handleDragStart);
+      dragItem.addEventListener('dragend', handleDragEnd);
+      dragItem.addEventListener('drag', handleDrag);
+      dragItem.addEventListener('dragenter', function () {
+        if (draggedItem !== droppedItem) {
+          droppedItem = dragItem;
+        }
+      });
+      dragItem.addEventListener('dragleave', function () {
+        droppedItem = null;
+      });
+    });
+    dropZones.forEach(function (dropZone) {
+      dropZone.addEventListener('dragenter', handleDragEnter);
+      dropZone.addEventListener('dragleave', handleDragLeave);
+      dropZone.addEventListener('dragover', handleDragOver);
+      dropZone.addEventListener('drop', handleDrop);
+    });
 
-    var _iterator9 = _createForOfIteratorHelper(elements),
-        _step9;
+    function handleDragStart(e) {
+      // e.dataTransfer.setData('dragItem', this.dataset.item);
+      draggedItem = this;
+      this.classList.add('draggable--active');
+    }
 
-    try {
-      for (_iterator9.s(); !(_step9 = _iterator9.n()).done;) {
-        var element = _step9.value;
-        var d = displace(element, options);
+    function handleDragEnd() {
+      this.classList.remove('draggable--active');
+
+      if (this.parentElement.classList.contains('appearance-sidebar')) {
+        this.querySelector('.icon').classList = 'icon settings-line';
+      } else {
+        if (this.querySelector('.icon').classList.contains('settings-line')) {
+          this.querySelector('.icon').classList = 'icon move';
+        }
       }
-    } catch (err) {
-      _iterator9.e(err);
-    } finally {
-      _iterator9.f();
+
+      if (this.parentElement.classList.contains('drag-top-navbar')) {
+        this.classList.add('clipped');
+      } else {
+        if (this.classList.contains('clipped')) {
+          this.classList.remove('clipped');
+        }
+      }
+
+      draggedItem = null;
+    }
+
+    function handleDrag() {}
+
+    function handleDragEnter(e) {
+      e.preventDefault();
+    }
+
+    function handleDragLeave() {}
+
+    function handleDragOver(e) {
+      e.preventDefault();
+    }
+
+    function handleDrop(e) {
+      var _this$querySelector;
+
+      // const dragFlag = e.dataTransfer.getData('dragItem');
+      // const dragItem = document.querySelector(`[data-item="${dragFlag}"]`);
+      // this.append(dragItem);
+      (_this$querySelector = this.querySelector('.appearance-sidebar-title')) === null || _this$querySelector === void 0 ? void 0 : _this$querySelector.classList.add('active');
+
+      if (droppedItem) {
+        if (droppedItem.parentElement === draggedItem.parentElement) {
+          var children = Array.from(droppedItem.parentElement.children);
+          var draggedIndex = children.indexOf(draggedItem);
+          var droppedIndex = children.indexOf(droppedItem);
+
+          if (draggedIndex > droppedIndex) {
+            draggedItem.parentElement.insertBefore(draggedItem, droppedItem);
+          } else {
+            draggedItem.parentElement.insertBefore(draggedItem, droppedItem.nextElementSibling);
+          }
+        } else {
+          this.insertBefore(draggedItem, droppedItem);
+        }
+      } else {
+        this.append(draggedItem);
+      }
     }
   })();
 
