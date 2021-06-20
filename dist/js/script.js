@@ -560,4 +560,36 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
   })();
+
+  (function () {
+    var element = document.querySelector('.editor');
+    var options = {
+      modules: {
+        toolbar: [['bold', 'italic', 'underline', 'strike'], ['image', 'blockquote', 'code-block'], [{
+          list: 'ordered'
+        }, {
+          list: 'bullet'
+        }], [{
+          indent: '-1'
+        }, {
+          indent: '+1'
+        }], [{
+          size: ['small', false, 'large', 'huge']
+        }], [{
+          header: [1, 2, 3, 4, 5, 6, false]
+        }], [{
+          color: []
+        }, {
+          background: []
+        }], [{
+          font: []
+        }], [{
+          align: []
+        }], ['formula'], ['clean']]
+      },
+      placeholder: 'Write your text here',
+      theme: 'snow'
+    };
+    var editor = new Quill(element, options);
+  })();
 });

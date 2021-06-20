@@ -1,5 +1,5 @@
 @@include('_head.html',{
-'title': 'Appearance-01'
+'title': 'Appearance'
 })
 <!-- ! Body -->
 <a class="skip-link sr-only" href="#skip-target">Skip to content</a>
@@ -255,7 +255,7 @@
           </article>
           <!-- Editor -->
           <article class="tab-content" id="editor">
-            <h2>4</h2>
+            <div class="editor"></div>
           </article>
         </div>
       </div>
@@ -268,7 +268,7 @@
   // Choose the default section on page load
   // And scroll to the top to show nav
   window.onload = function () {
-    window.location.hash = 'menus'
+    window.location.hash = 'general'
     document.documentElement.scrollTop = 0
   }
 </script>

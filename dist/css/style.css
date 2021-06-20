@@ -4403,6 +4403,10 @@ label {
   width: 25%;
 }
 
+.ql-editor:focus {
+  outline-width: 0;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
