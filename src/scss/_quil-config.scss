@@ -1,5 +1,36 @@
 .ql-editor {
+  border: 2px solid transparent;
+
   &:focus {
-    outline-width: 0;
+    outline: none;
+    border: $input-focus solid !important;
+    box-shadow: 0 0 0 2px $input-focus;
+  }
+}
+
+.content-textarea {
+  .ql-editor {
+    min-height: 366px;
+    background-color: $input-bg;
+
+    &::before {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      color: $placeholder;
+    }
+  }
+
+  &.ql-container {
+    border-radius: 0 0 8px 8px;
+    border-width: 0;
+  }
+}
+
+.new-page-content {
+  .ql-toolbar {
+    background-color: $input-bg;
+    border-width: 0;
+    border-radius: 8px 8px 0 0;
   }
 }

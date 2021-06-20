@@ -19,5 +19,7 @@
     placeholder: 'Write your text here',
     theme: 'snow',
   };
-  let editor = new Quill(element, options);
+  if (element) {
+    let editor = new Quill(element, options);
+  }
 })();

@@ -1882,10 +1882,6 @@ textarea:focus {
   box-shadow: 0 0 0 2px rgba(134, 182, 254, 0.5);
 }
 
-.content-textarea {
-  min-height: 366px;
-}
-
 .white-block .radio {
   position: absolute;
   left: 0;
@@ -1910,6 +1906,10 @@ label {
 }
 
 .tags-input {
+  padding: 5px 16px;
+}
+
+.new-page-content input {
   padding: 5px 16px;
 }
 
@@ -4403,8 +4403,38 @@ label {
   width: 25%;
 }
 
+.ql-editor {
+  border: 2px solid transparent;
+}
+
 .ql-editor:focus {
-  outline-width: 0;
+  outline: none;
+  border: rgba(134, 182, 254, 0.5) solid !important;
+  -webkit-box-shadow: 0 0 0 2px rgba(134, 182, 254, 0.5);
+  box-shadow: 0 0 0 2px rgba(134, 182, 254, 0.5);
+}
+
+.content-textarea .ql-editor {
+  min-height: 366px;
+  background-color: #eff0f6;
+}
+
+.content-textarea .ql-editor::before {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #d6d7e3;
+}
+
+.content-textarea.ql-container {
+  border-radius: 0 0 8px 8px;
+  border-width: 0;
+}
+
+.new-page-content .ql-toolbar {
+  background-color: #eff0f6;
+  border-width: 0;
+  border-radius: 8px 8px 0 0;
 }
 
 @media (min-width: 576px) {

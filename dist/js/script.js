@@ -590,6 +590,9 @@ document.addEventListener('DOMContentLoaded', function () {
       placeholder: 'Write your text here',
       theme: 'snow'
     };
-    var editor = new Quill(element, options);
+
+    if (element) {
+      var editor = new Quill(element, options);
+    }
   })();
 });

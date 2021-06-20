@@ -81,10 +81,6 @@ textarea {
   }
 }
 
-.content-textarea {
-  min-height: 366px;
-}
-
 .white-block {
   .radio {
     position: absolute;
@@ -108,4 +104,10 @@ label {
 
 .tags-input {
   padding: 5px 16px;
+}
+
+.new-page-content {
+  input {
+    padding: 5px 16px;
+  }
 }
