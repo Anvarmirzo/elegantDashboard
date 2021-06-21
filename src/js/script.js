@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   @@include('_aside.js')
   @@include('_lang-switcher.js')
   @@include('_users-dropdown.js')
+  @@include('_dark-mode.js')
   @@include('_checkbox.js')
   @@include('_tab-menu.js')
   @@include('_drag-and-drop.js')

@@ -145,6 +145,35 @@ document.addEventListener('DOMContentLoaded', function () {
   })();
 
   (function () {
+    var darkMode = localStorage.getItem('darkMode');
+    var darkModeToggle = document.querySelector('.theme-switcher');
+
+    var enableDarkMode = function enableDarkMode() {
+      document.body.classList.add('darkmode');
+      localStorage.setItem('darkMode', 'enabled');
+    };
+
+    var disableDarkMode = function disableDarkMode() {
+      document.body.classList.remove('darkmode');
+      localStorage.setItem('darkMode', null);
+    };
+
+    if (darkMode === 'enabled') {
+      enableDarkMode();
+    }
+
+    darkModeToggle.addEventListener('click', function () {
+      darkMode = localStorage.getItem('darkMode');
+
+      if (darkMode !== 'enabled') {
+        enableDarkMode();
+      } else {
+        disableDarkMode();
+      }
+    });
+  })();
+
+  (function () {
     var checkAll = document.querySelector('.check-all');
     var checkers = document.querySelectorAll('.check');
 

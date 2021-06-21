@@ -658,6 +658,9 @@ html {
 html,
 body {
   font-family: 'Inter', sans-serif;
+  -webkit-transition: 0.3s background-color;
+  -o-transition: 0.3s background-color;
+  transition: 0.3s background-color;
 }
 
 h1,
@@ -4533,6 +4536,20 @@ label {
   background-color: #eff0f6;
   border-width: 0;
   border-radius: 8px 8px 0 0;
+}
+
+.darkmode {
+  background-color: #161624;
+  /* Navigation */
+  /* Sidebar */
+}
+
+.darkmode .main-nav--bg {
+  background-color: #161624;
+}
+
+.darkmode .sidebar {
+  background-color: #161624 !important;
 }
 
 @media (min-width: 576px) {
