@@ -595,4 +595,65 @@ document.addEventListener('DOMContentLoaded', function () {
       var editor = new Quill(element, options);
     }
   })();
+
+  (function () {
+    var tagContainer = document.querySelector('.tag-container');
+
+    if (tagContainer) {
+      var createTag = function createTag(label) {
+        var div = document.createElement('div');
+        div.setAttribute('class', 'tag');
+        var span = document.createElement('span');
+        span.setAttribute('class', 'tag__title');
+        span.innerHTML = label;
+        var closeBtn = document.createElement('i');
+        closeBtn.setAttribute('class', 'icon');
+        closeBtn.setAttribute('data-item', label);
+        closeBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+        div.appendChild(span);
+        div.appendChild(closeBtn);
+        return div;
+      };
+
+      var reset = function reset() {
+        document.querySelectorAll('.tag').forEach(function (tag) {
+          tag.parentElement.removeChild(tag);
+        });
+      };
+
+      var addTags = function addTags() {
+        reset();
+        tags.slice().reverse().forEach(function (tag) {
+          var input = createTag(tag);
+          tagContainer.prepend(input);
+        });
+      };
+
+      var input = document.querySelector('.tag-container input');
+      var tags = [];
+      input.addEventListener('keyup', function (e) {
+        var trimmed = input.value.replace(/\s+/g, ' ').trim();
+
+        if (e.keyCode === 32 && trimmed.length >= 2) {
+          tags.push(input.value);
+          addTags();
+          input.value = '';
+        }
+      });
+      document.addEventListener('click', function (e) {
+        if (e.target.classList.contains('icon')) {
+          e.target.parentElement.remove();
+        }
+      });
+      var tagBtns = document.querySelectorAll('.tag-btn');
+      tagBtns.forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          var value = btn.textContent;
+          createTag(value);
+          tags.push(value);
+          addTags();
+        });
+      });
+    }
+  })();
 });

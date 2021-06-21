@@ -11,4 +11,5 @@ document.addEventListener('DOMContentLoaded', function() {
   @@include('_dropzone-config.js')
   @@include('_chart-config.js')
   @@include('_quil-config.js')
+  @@include('_tag-input.js')
 });
