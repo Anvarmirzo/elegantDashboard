@@ -27,7 +27,7 @@
           <!-- General -->
           <article class="tab-content" id="general">
             <form class="row tab-form">
-              <!-- ! Start content -->
+              <!-- ? Start content -->
               <div class="col-lg-8 tab-form-start">
                 <div class="row">
                   <div class="col-lg-5 mb-20">
@@ -45,33 +45,39 @@
                   <div class="col-xl-5 col-xxl-4">
                     <span class="tab-form__label">Website main language</span>
                     <div class="select-wrapper">
-                      <button class="select transparent-btn" type="button">
-                        <span>Select main language</span>
-                        <i data-feather="chevron-down" aria-hidden="true"></i>
-                      </button>
+                      <select class="select transparent-btn" required>
+                        <option selected disabled>Select main language</option>
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Uzbek">Uzbek</option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-xl-3 col-xxl-4">
                     <span class="tab-form__label">Default user role</span>
                     <div class="select-wrapper">
-                      <button class="select transparent-btn" type="button">
-                        <span>Author</span>
-                        <i data-feather="chevron-down" aria-hidden="true"></i>
-                      </button>
+                      <select class="select transparent-btn" required>
+                        <option selected>Author</option>
+                        <option value="Editor">Editor</option>
+                        <option value="Moderator">Moderator</option>
+                        <option value="Admin">Admin</option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-xl-4 col-xxl-4">
                     <span class="tab-form__label">Cache clear time</span>
                     <div class="select-wrapper">
-                      <button class="select transparent-btn" type="button">
-                        <span>Every 24 hour</span>
-                        <i data-feather="chevron-down" aria-hidden="true"></i>
-                      </button>
+                      <select class="select transparent-btn" required>
+                        <option selected>Every 24 hours</option>
+                        <option value="Pending">Every 12 hours</option>
+                        <option value="Active">Every 1 week</option>
+                        <option value="Pending">Every 1 month</option>
+                      </select>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- ! End content -->
+              <!-- ? End content -->
               <div class="col-lg-4 tab-form-end">
                 <img src="./img/svg/image-frame.svg" alt="user-pic">
                 <p class="tab-form-end__title">Sunshine theme lite</p>

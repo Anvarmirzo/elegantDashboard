@@ -155,10 +155,6 @@ button {
   align-items: center;
 }
 
-.dropdown-btn {
-  opacity: 0.5;
-}
-
 .nav-user-btn {
   background-color: transparent;
 }
@@ -257,6 +253,19 @@ button {
   font-size: 16px;
   line-height: 1.5;
   color: $label;
+}
+
+.view-sort-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background-color: $input-bg;
+  color: $placeholder;
+
+  &:hover {
+    color: #fff;
+    background-color: #E0E3F1;
+  }
 }
 
 /* Links */

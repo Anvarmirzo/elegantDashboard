@@ -49,4 +49,21 @@
     align-items: center;
     flex-wrap: wrap;
   }
+
+  &.media-bar {
+    padding-right: 0;
+    padding-left: 0;
+
+    .sort-bar-start {
+      flex-grow: 2;
+    }
+
+    .search-wrapper {
+      width: 90%;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
 }

@@ -495,7 +495,7 @@ document.addEventListener('DOMContentLoaded', function () {
           labels: ['Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
           datasets: [{
             label: '+958',
-            data: [45, 17, 50, 25, 70, 35, 90],
+            data: [90, 10, 80, 20, 70, 30, 50],
             tension: 0.4,
             backgroundColor: function backgroundColor(context) {
               var chart = context.chart;
@@ -525,7 +525,7 @@ document.addEventListener('DOMContentLoaded', function () {
           },
           elements: {
             point: {
-              radius: 0
+              radius: 1
             }
           },
           plugins: {

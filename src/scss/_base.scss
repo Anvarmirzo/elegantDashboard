@@ -44,12 +44,15 @@ img {
 }
 
 :focus {
-    outline-style: dotted;
-    outline-width: 3px;
+    outline-width: 0;
 }
 
 .me-11 {
     margin-right: 11px;
+}
+
+.me-10 {
+    margin-right: 10px;
 }
 
 .ms-20 {
