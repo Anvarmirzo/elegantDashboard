@@ -110,6 +110,10 @@
     }
 
     tbody tr {
+      &:last-child .users-item-dropdown::before {
+        border-color: $dark-bg-300 transparent transparent;
+      }
+
       td:last-child {
         text-align: center;
       }

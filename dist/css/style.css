@@ -4694,6 +4694,10 @@ label {
   border-color: transparent;
 }
 
+.darkmode .users-table tbody tr:last-child .users-item-dropdown::before {
+  border-color: #11111d transparent transparent;
+}
+
 .darkmode .users-table tbody tr td:last-child {
   text-align: center;
 }
