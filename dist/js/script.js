@@ -163,17 +163,19 @@ document.addEventListener('DOMContentLoaded', function () {
       enableDarkMode();
     }
 
-    darkModeToggle.addEventListener('click', function () {
-      darkMode = localStorage.getItem('darkMode');
+    if (darkModeToggle) {
+      darkModeToggle.addEventListener('click', function () {
+        darkMode = localStorage.getItem('darkMode');
 
-      if (darkMode !== 'enabled') {
-        enableDarkMode();
-      } else {
-        disableDarkMode();
-      }
+        if (darkMode !== 'enabled') {
+          enableDarkMode();
+        } else {
+          disableDarkMode();
+        }
 
-      addData();
-    });
+        addData();
+      });
+    }
   })();
 
   (function () {

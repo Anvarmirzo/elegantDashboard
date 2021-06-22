@@ -16,7 +16,7 @@
   if (darkMode === 'enabled') {
     enableDarkMode();
   }
-
+if (darkModeToggle) {
   darkModeToggle.addEventListener('click', () => {
     darkMode = localStorage.getItem('darkMode');
     if (darkMode !== 'enabled') {
@@ -26,4 +26,5 @@
     }
     addData();
   });
+}
 })();

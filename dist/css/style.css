@@ -3453,7 +3453,7 @@ label {
 .error-page img {
   max-width: 90%;
   text-align: center;
-  margin: auto;
+  margin: 0 auto 89px;
 }
 
 .form {
@@ -4567,6 +4567,10 @@ label {
   /* Chart */
   /* Sort bar */
   /* Table */
+  /* Users */
+  /* Form */
+  /* Sign up */
+  /* Error page */
   /* Select */
   /* Textarea */
   /* Tag container */
@@ -4576,6 +4580,11 @@ label {
   /* New page  */
   /* White block */
   /* Pagination */
+  /* Appearance */
+  /* QL editor  */
+  /* Badges */
+  /* Extentions */
+  /* Tabs */
   /* Buttons */
   /* Footer */
 }
@@ -4700,16 +4709,56 @@ label {
   border-color: #11111d transparent transparent;
 }
 
-.darkmode .users-table tbody tr td:last-child {
-  text-align: center;
-}
-
 .darkmode .users-table.active td {
   background-color: #2C2C42;
 }
 
 .darkmode .sort-btn {
   color: #d6d7e3;
+}
+
+.darkmode .users-item {
+  background-color: #161624;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.darkmode .users-item-body {
+  background-color: #161624;
+}
+
+.darkmode .users-item__name {
+  color: #EFF0F6;
+}
+
+.darkmode .users-item__desc,
+.darkmode .users-item__role {
+  color: #D6D7E3;
+}
+
+.darkmode .form {
+  background-color: #161624;
+}
+
+.darkmode .form-label {
+  color: #D6D7E3;
+}
+
+.darkmode .form-input {
+  background-color: #222235;
+  color: #D6D7E3;
+}
+
+.darkmode .sign-up__title {
+  color: #EFF0F6;
+}
+
+.darkmode .sign-up__subtitle {
+  color: #D6D7E3;
+}
+
+.darkmode .error-page-title {
+  color: #EFF0F6;
 }
 
 .darkmode .select {
@@ -4859,7 +4908,11 @@ label {
 }
 
 .darkmode .main-content {
-  background-color: #222235;
+  background-color: #161624;
+}
+
+.darkmode .top-cat-list a {
+  border-color: #37374F;
 }
 
 .darkmode .top-cat-title h3 {
@@ -4877,6 +4930,106 @@ label {
 
 .darkmode .pagination a.active {
   opacity: 1;
+}
+
+.darkmode .appearance-sidebar {
+  background-color: #222235;
+}
+
+.darkmode .appearance-sidebar .draggable {
+  background-color: #222235;
+}
+
+.darkmode .appearance-sidebar h3,
+.darkmode .appearance-sidebar p {
+  color: #D6D7E3;
+}
+
+.darkmode .drag-top-navbar {
+  background-color: #1E1E2E;
+}
+
+.darkmode .drag-top-navbar .draggable.clipped {
+  border: 1px dashed #161624;
+}
+
+.darkmode .drag-top-navbar .draggable.clipped .draggable__title {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #39394E;
+}
+
+.darkmode .menus__row .drag-zone {
+  background-color: #222235;
+  border-color: transparent;
+}
+
+.darkmode .menus__row .draggable {
+  border: 1px dashed #161624;
+}
+
+.darkmode .ql-editor {
+  color: #fff;
+}
+
+.darkmode .ql-editor.ql-blank::before {
+  color: #D6D7E3;
+}
+
+.darkmode .badge-disabled {
+  background-color: rgba(255, 182, 72, 0.1);
+  color: #ffb648;
+}
+
+.darkmode .extentions-item {
+  background-color: #222235;
+}
+
+.darkmode .extentions-item h3 {
+  color: #EFF0F6;
+}
+
+.darkmode .extentions-item p {
+  color: #D6D7E3;
+}
+
+.darkmode .extentions-item__img {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #3A3A52;
+}
+
+.darkmode .extentions-item-footer {
+  border-color: #3A3A52;
+}
+
+.darkmode .extentions-btn {
+  border: 1px solid #3A3A52 !important;
+}
+
+.darkmode .extentions-btn:focus {
+  border-color: #3A3A52 !important;
+}
+
+.darkmode .tab-form input {
+  background-color: #222235;
+  color: #EFF0F6;
+}
+
+.darkmode .tab-form__label {
+  color: #EFF0F6;
+}
+
+.darkmode .drag__title h3,
+.darkmode .drag__title p {
+  color: #D6D7E3;
+}
+
+.darkmode .tab-menu a {
+  color: #EFF0F6;
+}
+
+.darkmode .tab-menu a.active {
+  color: #526eff;
 }
 
 .darkmode .primary-white-btn {
