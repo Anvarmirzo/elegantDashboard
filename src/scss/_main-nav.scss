@@ -13,6 +13,7 @@
   }
 
   &--bg {
+    transition: 0.3s all;
     background-color: #fff;
   }
 
@@ -177,6 +178,7 @@
       font-size: 14px;
       line-height: 2.43;
       color: $placeholder;
+      transition: 0.3s all;
     }
   }
 }

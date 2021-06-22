@@ -145,6 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
   })();
 
   (function () {
+    Chart.defaults.backgroundColor = '#000';
     var darkMode = localStorage.getItem('darkMode');
     var darkModeToggle = document.querySelector('.theme-switcher');
 
@@ -170,6 +171,8 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
         disableDarkMode();
       }
+
+      addData();
     });
   })();
 
@@ -409,7 +412,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   })();
 
+  var charts = {};
+  var gridLine;
+  var titleColor;
+
   (function () {
+    /* Add gradient to chart */
+    var width, height, gradient;
+
+    function getGradient(ctx, chartArea) {
+      var chartWidth = chartArea.right - chartArea.left;
+      var chartHeight = chartArea.bottom - chartArea.top;
+
+      if (gradient === null || width !== chartWidth || height !== chartHeight) {
+        width = chartWidth;
+        height = chartHeight;
+        gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
+        gradient.addColorStop(0, 'rgba(255, 255, 255, 0)');
+        gradient.addColorStop(1, 'rgba(255, 255, 255, 0.4)');
+      }
+
+      return gradient;
+    }
+    /* Visitors chart */
+
+
     var ctx = document.getElementById('myChart');
 
     if (ctx) {
@@ -446,6 +473,11 @@ document.addEventListener('DOMContentLoaded', function () {
               },
               grid: {
                 display: false
+              }
+            },
+            x: {
+              grid: {
+                color: gridLine
               }
             }
           },
@@ -491,28 +523,10 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         }
       });
+      charts.visitors = myChart;
     }
-    /* ############################### */
+    /* Customers chart */
 
-
-    var width, height, gradient;
-
-    function getGradient(ctx, chartArea) {
-      var chartWidth = chartArea.right - chartArea.left;
-      var chartHeight = chartArea.bottom - chartArea.top;
-
-      if (gradient === null || width !== chartWidth || height !== chartHeight) {
-        // Create the gradient because this is either the first render
-        // or the size of the chart has changed
-        width = chartWidth;
-        height = chartHeight;
-        gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
-        gradient.addColorStop(0, 'rgba(255, 255, 255, 0)');
-        gradient.addColorStop(1, 'rgba(255, 255, 255, 0.4)');
-      }
-
-      return gradient;
-    }
 
     var customersChart = document.getElementById('customersChart');
 
@@ -587,8 +601,31 @@ document.addEventListener('DOMContentLoaded', function () {
           maintainAspectRatio: false
         }
       });
+      customersChart.customers = myCustomersChart;
     }
   })();
+  /* Change data of all charts */
+
+
+  function addData() {
+    var darkMode = localStorage.getItem('darkMode');
+
+    if (darkMode === 'enabled') {
+      gridLine = '#37374F';
+      titleColor = '#EFF0F6';
+    } else {
+      gridLine = '#EEEEEE';
+      titleColor = '#171717';
+    }
+
+    charts.visitors.options.scales.x.grid.color = gridLine;
+    charts.visitors.options.plugins.title.color = titleColor;
+    charts.visitors.options.scales.y.ticks.color = titleColor;
+    charts.visitors.options.scales.x.ticks.color = titleColor;
+    charts.visitors.update();
+  }
+
+  addData();
 
   (function () {
     var element = document.querySelector('.editor');

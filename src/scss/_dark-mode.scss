@@ -1,13 +1,123 @@
 .darkmode {
-  background-color: rgba(22, 22, 36, 1);
+  background-color: $dark-bg-200;
 
   /* Navigation */
   .main-nav--bg {
-    background-color: rgba(22, 22, 36, 1);
+    background-color: $dark-bg-200;
+  }
+
+  .search-wrapper {
+    input {
+      color: $placeholder;
+      background-color: $dark-bg-100;
+
+      &::placeholder {
+        background-color: $dark-bg-100;
+      }
+    }
+  }
+
+  .gray-circle-btn {
+    background-color: $dark-bg-100;
+  }
+
+  .sun-icon {
+    display: none;
+  }
+
+  .moon-icon {
+    display: initial;
+    fill: #fff;
   }
 
   /* Sidebar */
   .sidebar {
-    background-color: rgba(22, 22, 36, 1) !important;
+    background-color: $dark-bg-200 !important;
   }
+
+  /* Dropdown */
+  .dropdown {
+    &-btn {
+      color: $label;
+    }
+  }
+
+  /* Main Title */
+  .main-title {
+    color: #EFF0F6;
+    ;
+  }
+
+  /* Dashboard */
+  .stat-cards-item {
+    background-color: $dark-bg-100;
+    box-shadow: none;
+  }
+
+  .stat-cards-info__num {
+    color: #EFF0F6;
+  }
+
+  /* Chart */
+
+  .chart {
+    box-shadow: none;
+  }
+
+  #myChart {
+    background-color: $dark-bg-100;
+    box-shadow: none;
+  }
+
+  /* Table */
+  .users-table {
+    color: #EFF0F6;
+
+    &-info {
+      border-bottom-color: transparent;
+      color: #EFF0F6;
+    }
+
+    thead {
+      background-color: $dark-bg-200;
+    }
+
+    td {
+      background-color: $dark-bg-100;
+      border-color: transparent;
+    }
+
+    tbody tr {
+      td:last-child {
+        text-align: center;
+      }
+    }
+
+    &.active td {
+      background-color: #2C2C42;
+    }
+  }
+
+
+  /* White block */
+  .white-block {
+    background-color: $dark-bg-100;
+  }
+
+  .top-cat-title h3 {
+    color: #EFF0F6;
+  }
+
+  .top-cat-list__title {
+    color: #EFF0F6;
+  }
+
+  .footer {
+    border-top-color: #222235;
+    ;
+  }
+}
+
+.moon-icon {
+  display: none;
 }

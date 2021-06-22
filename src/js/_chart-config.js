@@ -1,4 +1,29 @@
+let charts = {};
+let gridLine;
+let titleColor;
+
 (function () {
+  /* Add gradient to chart */
+  let width, height, gradient;
+  function getGradient(ctx, chartArea) {
+    const chartWidth = chartArea.right - chartArea.left;
+    const chartHeight = chartArea.bottom - chartArea.top;
+    if (gradient === null || width !== chartWidth || height !== chartHeight) {
+      width = chartWidth;
+      height = chartHeight;
+      gradient = ctx.createLinearGradient(
+        0,
+        chartArea.bottom,
+        0,
+        chartArea.top
+      );
+      gradient.addColorStop(0, 'rgba(255, 255, 255, 0)');
+      gradient.addColorStop(1, 'rgba(255, 255, 255, 0.4)');
+    }
+    return gradient;
+  }
+
+  /* Visitors chart */
   let ctx = document.getElementById('myChart');
   if (ctx) {
     let myCanvas = ctx.getContext('2d');
@@ -40,6 +65,11 @@
               display: false,
             },
           },
+          x: {
+            grid: {
+              color: gridLine,
+            },
+          },
         },
         elements: {
           point: {
@@ -78,31 +108,10 @@
         },
       },
     });
+    charts.visitors = myChart;
   }
 
-  /* ############################### */
-
-  let width, height, gradient;
-  function getGradient(ctx, chartArea) {
-    const chartWidth = chartArea.right - chartArea.left;
-    const chartHeight = chartArea.bottom - chartArea.top;
-    if (gradient === null || width !== chartWidth || height !== chartHeight) {
-      // Create the gradient because this is either the first render
-      // or the size of the chart has changed
-      width = chartWidth;
-      height = chartHeight;
-      gradient = ctx.createLinearGradient(
-        0,
-        chartArea.bottom,
-        0,
-        chartArea.top
-      );
-      gradient.addColorStop(0, 'rgba(255, 255, 255, 0)');
-      gradient.addColorStop(1, 'rgba(255, 255, 255, 0.4)');
-    }
-
-    return gradient;
-  }
+  /* Customers chart */
   let customersChart = document.getElementById('customersChart');
   if (customersChart) {
     let customersChartCanvas = customersChart.getContext('2d');
@@ -131,7 +140,6 @@
           },
         ],
       },
-
       options: {
         scales: {
           y: {
@@ -171,5 +179,24 @@
         maintainAspectRatio: false,
       },
     });
+    customersChart.customers = myCustomersChart;
   }
 })();
+
+/* Change data of all charts */
+function addData() {
+  let darkMode = localStorage.getItem('darkMode');
+  if (darkMode === 'enabled') {
+    gridLine = '#37374F';
+    titleColor = '#EFF0F6';
+  } else {
+    gridLine = '#EEEEEE';
+    titleColor = '#171717';
+  }
+  charts.visitors.options.scales.x.grid.color = gridLine;
+  charts.visitors.options.plugins.title.color = titleColor;
+  charts.visitors.options.scales.y.ticks.color = titleColor;
+  charts.visitors.options.scales.x.ticks.color = titleColor;
+  charts.visitors.update();
+}
+addData();

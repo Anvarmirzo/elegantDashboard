@@ -1,4 +1,5 @@
 (function () {
+  Chart.defaults.backgroundColor = '#000';
   let darkMode = localStorage.getItem('darkMode');
   const darkModeToggle = document.querySelector('.theme-switcher');
 
@@ -23,5 +24,6 @@
     } else {
       disableDarkMode();
     }
+    addData();
   });
 })();
