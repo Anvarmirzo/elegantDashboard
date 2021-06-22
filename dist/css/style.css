@@ -4570,6 +4570,7 @@ label {
   /* Select */
   /* Textarea */
   /* Tag container */
+  /* Folder block */
   /* Media */
   /* Dropzone */
   /* New page  */
@@ -4737,6 +4738,35 @@ label {
 
 .darkmode .tag-btn {
   border-color: #363648;
+  background-color: #222235;
+}
+
+.darkmode .folder-block {
+  background-color: #161624 !important;
+}
+
+.darkmode .folder-block-title h3 {
+  color: #EFF0F6;
+}
+
+.darkmode .folder-block h3 {
+  color: #EFF0F6;
+}
+
+.darkmode .folder-info__name {
+  color: #EFF0F6;
+}
+
+.darkmode .folder-btn {
+  background-color: #222235;
+}
+
+.darkmode .main-files {
+  background-color: #161624 !important;
+}
+
+.darkmode .files-item {
+  border-color: #222235;
   background-color: #222235;
 }
 

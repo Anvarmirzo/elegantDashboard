@@ -160,6 +160,40 @@
     }
   }
 
+  /* Folder block */
+  .folder {
+    &-block {
+      background-color: $dark-bg-200 !important;
+
+      &-title {
+        h3 {
+          color: #EFF0F6
+        }
+      }
+
+      h3 {
+        color: #EFF0F6;
+      }
+    }
+
+    &-info__name {
+      color: #EFF0F6;
+    }
+
+    &-btn {
+      background-color: $dark-bg-100;
+    }
+  }
+
+  .main-files {
+    background-color: $dark-bg-200 !important;
+  }
+
+  .files-item {
+    border-color: $dark-bg-100;
+    background-color: $dark-bg-100;
+  }
+
   /* Media */
   .media {
     &-sidebar {
