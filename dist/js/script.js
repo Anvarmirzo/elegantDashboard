@@ -618,11 +618,13 @@ document.addEventListener('DOMContentLoaded', function () {
       titleColor = '#171717';
     }
 
-    charts.visitors.options.scales.x.grid.color = gridLine;
-    charts.visitors.options.plugins.title.color = titleColor;
-    charts.visitors.options.scales.y.ticks.color = titleColor;
-    charts.visitors.options.scales.x.ticks.color = titleColor;
-    charts.visitors.update();
+    if (charts.hasOwnProperty('visitors')) {
+      charts.visitors.options.scales.x.grid.color = gridLine;
+      charts.visitors.options.plugins.title.color = titleColor;
+      charts.visitors.options.scales.y.ticks.color = titleColor;
+      charts.visitors.options.scales.x.ticks.color = titleColor;
+      charts.visitors.update();
+    }
   }
 
   addData();

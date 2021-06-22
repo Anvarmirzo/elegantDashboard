@@ -37,8 +37,26 @@
 
   /* Dropdown */
   .dropdown {
+    background-color: $dark-bg-300;
+    box-shadow: none;
+
+    &::before {
+      border-color: transparent transparent $dark-bg-300;
+    }
+
+    a {
+      border-bottom-color: #2C2C42;
+      color: #D6D7E3;
+    }
+
     &-btn {
       color: $label;
+    }
+  }
+
+  .notification-dropdown {
+    &__title {
+      color: #D6D7E3;
     }
   }
 
@@ -59,7 +77,6 @@
   }
 
   /* Chart */
-
   .chart {
     box-shadow: none;
   }
@@ -67,6 +84,11 @@
   #myChart {
     background-color: $dark-bg-100;
     box-shadow: none;
+  }
+
+  /* Sort bar */
+  .sort-bar {
+    background-color: $dark-bg-200;
   }
 
   /* Table */
@@ -98,6 +120,15 @@
     }
   }
 
+  .sort-btn {
+    color: $placeholder;
+  }
+
+  /* Select */
+  .select {
+    background-color: $dark-bg-200;
+    border-color: $dark-bg-100 !important;
+  }
 
   /* White block */
   .white-block {
@@ -112,6 +143,17 @@
     color: #EFF0F6;
   }
 
+  /* Pagination */
+  .pagination a {
+    opacity: .5;
+    color: #FFFFFF;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  /* Footer */
   .footer {
     border-top-color: #222235;
     ;

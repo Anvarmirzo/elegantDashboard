@@ -4563,8 +4563,12 @@ label {
   /* Main Title */
   /* Dashboard */
   /* Chart */
+  /* Sort bar */
   /* Table */
+  /* Select */
   /* White block */
+  /* Pagination */
+  /* Footer */
 }
 
 .darkmode .main-nav--bg {
@@ -4613,8 +4617,27 @@ label {
   background-color: #161624 !important;
 }
 
+.darkmode .dropdown {
+  background-color: #11111d;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.darkmode .dropdown::before {
+  border-color: transparent transparent #11111d;
+}
+
+.darkmode .dropdown a {
+  border-bottom-color: #2C2C42;
+  color: #D6D7E3;
+}
+
 .darkmode .dropdown-btn {
   color: #b9b9b9;
+}
+
+.darkmode .notification-dropdown__title {
+  color: #D6D7E3;
 }
 
 .darkmode .main-title {
@@ -4640,6 +4663,10 @@ label {
   background-color: #222235;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.darkmode .sort-bar {
+  background-color: #161624;
 }
 
 .darkmode .users-table {
@@ -4668,6 +4695,15 @@ label {
   background-color: #2C2C42;
 }
 
+.darkmode .sort-btn {
+  color: #d6d7e3;
+}
+
+.darkmode .select {
+  background-color: #161624;
+  border-color: #222235 !important;
+}
+
 .darkmode .white-block {
   background-color: #222235;
 }
@@ -4678,6 +4714,15 @@ label {
 
 .darkmode .top-cat-list__title {
   color: #EFF0F6;
+}
+
+.darkmode .pagination a {
+  opacity: .5;
+  color: #FFFFFF;
+}
+
+.darkmode .pagination a.active {
+  opacity: 1;
 }
 
 .darkmode .footer {
