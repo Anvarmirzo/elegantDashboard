@@ -4854,6 +4854,10 @@ label {
   color: #D6D7E3;
 }
 
+.darkmode .white-block .radio {
+  background-color: #37374B;
+}
+
 .darkmode .main-content {
   background-color: #222235;
 }
