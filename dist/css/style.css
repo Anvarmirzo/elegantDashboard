@@ -4570,6 +4570,7 @@ label {
   /* Select */
   /* Textarea */
   /* Tag container */
+  /* Media */
   /* Dropzone */
   /* New page  */
   /* White block */
@@ -4736,6 +4737,58 @@ label {
 
 .darkmode .tag-btn {
   border-color: #363648;
+  background-color: #222235;
+}
+
+.darkmode .media-sidebar__title {
+  color: #EFF0F6;
+}
+
+.darkmode .media-content {
+  background-color: #161624;
+}
+
+.darkmode .media-dropzone {
+  background-color: #222235;
+}
+
+.darkmode .quick-links a.info {
+  background-color: rgba(88, 135, 255, 0.08);
+}
+
+.darkmode .quick-links a.success {
+  background-color: rgba(75, 222, 151, 0.08);
+}
+
+.darkmode .quick-links a.primary {
+  background-color: rgba(47, 73, 209, 0.08);
+}
+
+.darkmode .quick-links a.warning {
+  background-color: rgba(255, 182, 72, 0.08);
+}
+
+.darkmode .quick-links a.danger {
+  background-color: rgba(242, 100, 100, 0.08);
+}
+
+.darkmode .storage__indicator {
+  background-color: #4bde97;
+}
+
+.darkmode .storage__title {
+  color: #EFF0F6;
+}
+
+.darkmode .upgrade p {
+  color: #FFFFFF;
+}
+
+.darkmode .upgrade-btn {
+  color: #0061f7;
+}
+
+.darkmode .view-sort-btn {
   background-color: #222235;
 }
 
