@@ -25,7 +25,10 @@ button {
 }
 
 .main-btns-wrapper {
-  button {
+
+  button,
+  select {
+    min-height: 44px;
     line-height: 1.5;
   }
 }

@@ -1308,7 +1308,9 @@ button.disabled:focus {
   outline: none;
 }
 
-.main-btns-wrapper button {
+.main-btns-wrapper button,
+.main-btns-wrapper select {
+  min-height: 44px;
   line-height: 1.5;
 }
 
@@ -4556,7 +4558,7 @@ label {
 }
 
 .darkmode {
-  background-color: #161624;
+  background-color: #11111d;
   /* Navigation */
   /* Sidebar */
   /* Dropdown */
@@ -4566,8 +4568,13 @@ label {
   /* Sort bar */
   /* Table */
   /* Select */
+  /* Textarea */
+  /* Tag container */
+  /* Dropzone */
+  /* New page  */
   /* White block */
   /* Pagination */
+  /* Buttons */
   /* Footer */
 }
 
@@ -4704,7 +4711,63 @@ label {
   border-color: #222235 !important;
 }
 
+.darkmode textarea {
+  background-color: #363648;
+  color: #d6d7e3;
+}
+
+.darkmode .tag-container {
+  background-color: #363648;
+}
+
+.darkmode .tag-container input {
+  background-color: #363648;
+  color: #d6d7e3;
+}
+
+.darkmode .tag {
+  background-color: #222235;
+  border-color: #363648;
+}
+
+.darkmode .tag-btn {
+  border-color: #363648;
+  background-color: #222235;
+}
+
+.darkmode .dropzone-wrapper {
+  background-color: #222235;
+}
+
+.darkmode .dz-preview {
+  background-color: #222235;
+}
+
+.darkmode .new-page-content input {
+  background-color: #363648;
+  color: #d6d7e3;
+}
+
+.darkmode .new-page-content .ql-toolbar {
+  background-color: #363648;
+  color: #d6d7e3;
+}
+
+.darkmode .content-textarea .ql-editor {
+  background-color: #363648;
+  color: #d6d7e3;
+}
+
 .darkmode .white-block {
+  background-color: #222235;
+  color: #D6D7E3;
+}
+
+.darkmode .white-block__title {
+  color: #D6D7E3;
+}
+
+.darkmode .main-content {
   background-color: #222235;
 }
 
@@ -4723,6 +4786,11 @@ label {
 
 .darkmode .pagination a.active {
   opacity: 1;
+}
+
+.darkmode .primary-white-btn {
+  border: 1px solid #222235 !important;
+  background-color: #161624;
 }
 
 .darkmode .footer {

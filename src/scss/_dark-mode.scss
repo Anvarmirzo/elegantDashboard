@@ -1,5 +1,5 @@
 .darkmode {
-  background-color: $dark-bg-200;
+  background-color: $dark-bg-300;
 
   /* Navigation */
   .main-nav--bg {
@@ -130,8 +130,74 @@
     border-color: $dark-bg-100 !important;
   }
 
+  /* Textarea */
+  textarea {
+    background-color: #363648;
+    color: #d6d7e3;
+  }
+
+  /* Tag container */
+  .tag-container {
+    background-color: #363648;
+
+    input {
+      background-color: #363648;
+      color: #d6d7e3;
+    }
+  }
+
+  .tag {
+    background-color: $dark-bg-100;
+    border-color: #363648;
+
+    &-btn {
+      border-color: #363648;
+      background-color: $dark-bg-100;
+    }
+  }
+
+  /* Dropzone */
+  .dropzone-wrapper {
+    background-color: $dark-bg-100;
+  }
+
+  .dz-preview {
+    background-color: $dark-bg-100;
+  }
+
+  /* New page  */
+  .new-page {
+    &-content {
+      input {
+        background-color: #363648;
+        color: #d6d7e3;
+      }
+
+      .ql-toolbar {
+        background-color: #363648;
+        color: #d6d7e3;
+      }
+    }
+  }
+
+  .content-textarea {
+    .ql-editor {
+      background-color: #363648;
+      color: #d6d7e3;
+    }
+  }
+
   /* White block */
   .white-block {
+    background-color: $dark-bg-100;
+    color: #D6D7E3;
+
+    &__title {
+      color: #D6D7E3;
+    }
+  }
+
+  .main-content {
     background-color: $dark-bg-100;
   }
 
@@ -151,6 +217,12 @@
     &.active {
       opacity: 1;
     }
+  }
+
+  /* Buttons */
+  .primary-white-btn {
+    border: 1px solid #222235 !important;
+    background-color: $dark-bg-200;
   }
 
   /* Footer */
