@@ -1341,7 +1341,7 @@ button.disabled:focus {
 
 .main-btns-wrapper button,
 .main-btns-wrapper select {
-  min-height: 44px;
+  min-height: 48px;
   line-height: 1.5;
 }
 
@@ -3358,7 +3358,7 @@ label {
 }
 
 .main-btns-wrapper button {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .main-btns-wrapper button:last-child {

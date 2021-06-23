@@ -733,16 +733,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (e.keyCode === 32 && trimmed.length >= 2) {
           tags.push(input.value);
           addTags();
-          input.value = '';
-        }
-      });
-      var tagBtns = document.querySelectorAll('.tag-btn');
-      tagBtns.forEach(function (btn) {
-        btn.addEventListener('click', function (e) {
-          var value = btn.textContent;
-          createTag(value);
-          tags.push(value);
-          addTags();
           var tagCloseBtns = document.querySelectorAll('.tag .icon');
 
           if (tagCloseBtns) {
@@ -784,6 +774,60 @@ document.addEventListener('DOMContentLoaded', function () {
               _iterator11.e(err);
             } finally {
               _iterator11.f();
+            }
+          }
+
+          input.value = '';
+        }
+      });
+      var tagBtns = document.querySelectorAll('.tag-btn');
+      tagBtns.forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          var value = btn.textContent;
+          createTag(value);
+          tags.push(value);
+          addTags();
+          var tagCloseBtns = document.querySelectorAll('.tag .icon');
+
+          if (tagCloseBtns) {
+            var _iterator13 = _createForOfIteratorHelper(tagCloseBtns),
+                _step13;
+
+            try {
+              var _loop3 = function _loop3() {
+                var tagCloseBtn = _step13.value;
+                tagCloseBtn.addEventListener('click', function (e) {
+                  var btnAttr = tagCloseBtn.getAttribute('data-item');
+
+                  var _iterator14 = _createForOfIteratorHelper(tags),
+                      _step14;
+
+                  try {
+                    for (_iterator14.s(); !(_step14 = _iterator14.n()).done;) {
+                      var tagsItem = _step14.value;
+
+                      if (btnAttr === tagsItem) {
+                        tagCloseBtn.parentElement.remove();
+                        tags = tags.filter(function (item) {
+                          return item !== btnAttr;
+                        });
+                      }
+                    }
+                  } catch (err) {
+                    _iterator14.e(err);
+                  } finally {
+                    _iterator14.f();
+                  }
+                });
+              };
+
+              for (_iterator13.s(); !(_step13 = _iterator13.n()).done;) {
+                _loop3();
+              }
+            } catch (err) {
+              _iterator13.e(err);
+            } finally {
+              _iterator13.f();
             }
           }
         });

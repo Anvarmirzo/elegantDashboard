@@ -42,6 +42,20 @@
       if (e.keyCode === 32 && trimmed.length >= 2) {
         tags.push(input.value);
         addTags();
+        const tagCloseBtns = document.querySelectorAll('.tag .icon');
+        if (tagCloseBtns) {
+          for (const tagCloseBtn of tagCloseBtns) {
+            tagCloseBtn.addEventListener('click', function (e) {
+              let btnAttr = tagCloseBtn.getAttribute('data-item');
+              for (const tagsItem of tags) {
+                if (btnAttr === tagsItem) {
+                  tagCloseBtn.parentElement.remove();
+                  tags = tags.filter((item) => item !== btnAttr);
+                }
+              }
+            });
+          }
+        }
         input.value = '';
       }
     });
