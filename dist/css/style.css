@@ -2565,6 +2565,10 @@ label {
   outline: none;
 }
 
+.main-nav .sidebar-toggle {
+  display: none;
+}
+
 .main-nav--bg {
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
@@ -5688,6 +5692,10 @@ label {
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+  }
+
+  .main-nav .sidebar-toggle {
+    display: initial;
   }
 
   .customers-wrapper {

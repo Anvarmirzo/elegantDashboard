@@ -20,6 +20,14 @@
     }
   }
 
+  .sidebar-toggle {
+    display: none;
+
+    @include block_991 {
+      display: initial;
+    }
+  }
+
   &--bg {
     transition: 0.3s all;
     background-color: #fff;
