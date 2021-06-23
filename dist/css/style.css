@@ -3013,6 +3013,12 @@ label {
   width: 100%;
 }
 
+.categories-sort-bar .sort-bar-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
 .stat-cards {
   margin-right: -10px;
   margin-left: -10px;
@@ -5673,6 +5679,10 @@ label {
     width: 174px;
   }
 
+  .categories-sort-bar .search-wrapper input {
+    width: 271px;
+  }
+
   .chart {
     height: auto;
     max-height: 370px;
@@ -5818,6 +5828,14 @@ label {
 }
 
 @media (max-width: 480.98px) {
+  .main-title {
+    font-size: 20px;
+  }
+
+  .primary-default-btn {
+    padding: 8px 15px;
+  }
+
   .pagination-wrapper {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -5825,8 +5843,8 @@ label {
   }
 
   .pagination a {
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
   }
 
   .sort-bar-end .select-wrapper {

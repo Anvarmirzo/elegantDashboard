@@ -130,3 +130,17 @@
     }
   }
 }
+
+.categories-sort-bar {
+  .search-wrapper {
+    input {
+      @media (max-width:1300px) {
+        width: 271px;
+      }
+    }
+  }
+
+  .sort-bar-end {
+    justify-content: flex-end;
+  }
+}

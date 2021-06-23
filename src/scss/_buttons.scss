@@ -67,6 +67,10 @@ button {
     background-color: #4661F0;
     color: #fff;
   }
+
+  @include block_480 {
+    padding: 8px 15px;
+  }
 }
 
 .primary-white-btn {
