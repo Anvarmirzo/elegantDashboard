@@ -48,6 +48,10 @@
       &::after {
         right: -4px;
       }
+
+      &>.icon {
+        margin-right: 0;
+      }
     }
 
     .msg-counter {

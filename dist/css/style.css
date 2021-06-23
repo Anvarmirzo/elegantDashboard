@@ -2320,6 +2320,10 @@ label {
   right: -4px;
 }
 
+.sidebar.hidden .sidebar-body-menu a > .icon {
+  margin-right: 0;
+}
+
 .sidebar.hidden .msg-counter {
   right: 10px;
   top: 30%;
