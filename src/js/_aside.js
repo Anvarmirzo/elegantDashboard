@@ -1,25 +1,17 @@
 (function () {
   const sidebar = document.querySelector('.sidebar'),
     catSubMenu = document.querySelector('.cat-sub-menu'),
-    sidebarBtn = document.querySelector('.sidebar-toggle');
-  if (sidebarBtn && catSubMenu && sidebarBtn) {
-    sidebarBtn.addEventListener('click', () => {
-      sidebarBtn.classList.toggle('rotated');
-      sidebar.classList.toggle('hidden');
-      catSubMenu.classList.remove('visible');
-    });
-
-    function hideSidebar() {
-      const windowInnerWidth = window.innerWidth;
-      if (windowInnerWidth <= 992) {
-        sidebar.classList.add('hidden');
-      }
+    sidebarBtns = document.querySelectorAll('.sidebar-toggle');
+  for (const sidebarBtn of sidebarBtns) {
+    if (sidebarBtn && catSubMenu && sidebarBtn) {
+      sidebarBtn.addEventListener('click', () => {
+        for (const sdbrBtn of sidebarBtns) {
+          sdbrBtn.classList.toggle('rotated');
+        }
+        sidebar.classList.toggle('hidden');
+        catSubMenu.classList.remove('visible');
+      });
     }
-    hideSidebar();
-
-    window.addEventListener('resize', () => {
-      hideSidebar();
-    });
   }
 })();
 

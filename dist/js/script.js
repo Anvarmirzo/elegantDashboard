@@ -28,26 +28,40 @@ document.addEventListener('DOMContentLoaded', function () {
   (function () {
     var sidebar = document.querySelector('.sidebar'),
         catSubMenu = document.querySelector('.cat-sub-menu'),
-        sidebarBtn = document.querySelector('.sidebar-toggle');
+        sidebarBtns = document.querySelectorAll('.sidebar-toggle');
 
-    if (sidebarBtn && catSubMenu && sidebarBtn) {
-      var hideSidebar = function hideSidebar() {
-        var windowInnerWidth = window.innerWidth;
+    var _iterator = _createForOfIteratorHelper(sidebarBtns),
+        _step;
 
-        if (windowInnerWidth <= 992) {
-          sidebar.classList.add('hidden');
+    try {
+      for (_iterator.s(); !(_step = _iterator.n()).done;) {
+        var sidebarBtn = _step.value;
+
+        if (sidebarBtn && catSubMenu && sidebarBtn) {
+          sidebarBtn.addEventListener('click', function () {
+            var _iterator2 = _createForOfIteratorHelper(sidebarBtns),
+                _step2;
+
+            try {
+              for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+                var sdbrBtn = _step2.value;
+                sdbrBtn.classList.toggle('rotated');
+              }
+            } catch (err) {
+              _iterator2.e(err);
+            } finally {
+              _iterator2.f();
+            }
+
+            sidebar.classList.toggle('hidden');
+            catSubMenu.classList.remove('visible');
+          });
         }
-      };
-
-      sidebarBtn.addEventListener('click', function () {
-        sidebarBtn.classList.toggle('rotated');
-        sidebar.classList.toggle('hidden');
-        catSubMenu.classList.remove('visible');
-      });
-      hideSidebar();
-      window.addEventListener('resize', function () {
-        hideSidebar();
-      });
+      }
+    } catch (err) {
+      _iterator.e(err);
+    } finally {
+      _iterator.f();
     }
   })();
 
@@ -93,21 +107,21 @@ document.addEventListener('DOMContentLoaded', function () {
     var layer = document.querySelector('.layer');
 
     if (userDdList && userDdBtnList) {
-      var _iterator = _createForOfIteratorHelper(userDdBtnList),
-          _step;
+      var _iterator3 = _createForOfIteratorHelper(userDdBtnList),
+          _step3;
 
       try {
-        for (_iterator.s(); !(_step = _iterator.n()).done;) {
-          var userDdBtn = _step.value;
+        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+          var userDdBtn = _step3.value;
           userDdBtn.addEventListener('click', function (e) {
             layer.classList.add('active');
 
-            var _iterator2 = _createForOfIteratorHelper(userDdList),
-                _step2;
+            var _iterator4 = _createForOfIteratorHelper(userDdList),
+                _step4;
 
             try {
-              for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
-                var userDd = _step2.value;
+              for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+                var userDd = _step4.value;
 
                 if (e.currentTarget.nextElementSibling == userDd) {
                   if (userDd.classList.contains('active')) {
@@ -120,27 +134,27 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
               }
             } catch (err) {
-              _iterator2.e(err);
+              _iterator4.e(err);
             } finally {
-              _iterator2.f();
+              _iterator4.f();
             }
           });
         }
       } catch (err) {
-        _iterator.e(err);
+        _iterator3.e(err);
       } finally {
-        _iterator.f();
+        _iterator3.f();
       }
     }
 
     if (layer) {
       layer.addEventListener('click', function (e) {
-        var _iterator3 = _createForOfIteratorHelper(userDdList),
-            _step3;
+        var _iterator5 = _createForOfIteratorHelper(userDdList),
+            _step5;
 
         try {
-          for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
-            var userDd = _step3.value;
+          for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
+            var userDd = _step5.value;
 
             if (userDd.classList.contains('active')) {
               userDd.classList.remove('active');
@@ -148,9 +162,9 @@ document.addEventListener('DOMContentLoaded', function () {
             }
           }
         } catch (err) {
-          _iterator3.e(err);
+          _iterator5.e(err);
         } finally {
-          _iterator3.f();
+          _iterator5.f();
         }
       });
     }
@@ -196,12 +210,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (checkAll && checkers) {
       checkAll.addEventListener('change', function (e) {
-        var _iterator4 = _createForOfIteratorHelper(checkers),
-            _step4;
+        var _iterator6 = _createForOfIteratorHelper(checkers),
+            _step6;
 
         try {
-          for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
-            var checker = _step4.value;
+          for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
+            var checker = _step6.value;
 
             if (checkAll.checked) {
               checker.checked = true;
@@ -212,18 +226,18 @@ document.addEventListener('DOMContentLoaded', function () {
             }
           }
         } catch (err) {
-          _iterator4.e(err);
+          _iterator6.e(err);
         } finally {
-          _iterator4.f();
+          _iterator6.f();
         }
       });
 
-      var _iterator5 = _createForOfIteratorHelper(checkers),
-          _step5;
+      var _iterator7 = _createForOfIteratorHelper(checkers),
+          _step7;
 
       try {
         var _loop = function _loop() {
-          var checker = _step5.value;
+          var checker = _step7.value;
           checker.addEventListener('change', function (e) {
             checker.parentElement.parentElement.parentElement.classList.toggle('active');
 
@@ -244,13 +258,13 @@ document.addEventListener('DOMContentLoaded', function () {
           });
         };
 
-        for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
+        for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {
           _loop();
         }
       } catch (err) {
-        _iterator5.e(err);
+        _iterator7.e(err);
       } finally {
-        _iterator5.f();
+        _iterator7.f();
       }
     }
   })();
@@ -266,21 +280,21 @@ document.addEventListener('DOMContentLoaded', function () {
         checkedSum.textContent = totalChecked.length;
       });
 
-      var _iterator6 = _createForOfIteratorHelper(checkers),
-          _step6;
+      var _iterator8 = _createForOfIteratorHelper(checkers),
+          _step8;
 
       try {
-        for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
-          var checker = _step6.value;
+        for (_iterator8.s(); !(_step8 = _iterator8.n()).done;) {
+          var checker = _step8.value;
           checker.addEventListener('change', function (e) {
             var totalChecked = document.querySelectorAll('.users-table .check:checked');
             checkedSum.textContent = totalChecked.length;
           });
         }
       } catch (err) {
-        _iterator6.e(err);
+        _iterator8.e(err);
       } finally {
-        _iterator6.f();
+        _iterator8.f();
       }
     }
   })();
@@ -289,35 +303,35 @@ document.addEventListener('DOMContentLoaded', function () {
     var tabs = document.querySelectorAll('.tab-menu a');
 
     if (tabs) {
-      var _iterator7 = _createForOfIteratorHelper(tabs),
-          _step7;
+      var _iterator9 = _createForOfIteratorHelper(tabs),
+          _step9;
 
       try {
-        for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {
-          var tab = _step7.value;
+        for (_iterator9.s(); !(_step9 = _iterator9.n()).done;) {
+          var tab = _step9.value;
           tab.addEventListener('click', function (e) {
-            var _iterator8 = _createForOfIteratorHelper(tabs),
-                _step8;
+            var _iterator10 = _createForOfIteratorHelper(tabs),
+                _step10;
 
             try {
-              for (_iterator8.s(); !(_step8 = _iterator8.n()).done;) {
-                var _tab = _step8.value;
+              for (_iterator10.s(); !(_step10 = _iterator10.n()).done;) {
+                var _tab = _step10.value;
 
                 _tab.classList.remove('active');
               }
             } catch (err) {
-              _iterator8.e(err);
+              _iterator10.e(err);
             } finally {
-              _iterator8.f();
+              _iterator10.f();
             }
 
             e.currentTarget.classList.add('active');
           });
         }
       } catch (err) {
-        _iterator7.e(err);
+        _iterator9.e(err);
       } finally {
-        _iterator7.f();
+        _iterator9.f();
       }
     }
   })();

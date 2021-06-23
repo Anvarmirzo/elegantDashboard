@@ -119,6 +119,14 @@ button {
   }
 }
 
+.show-sidebar-btn {
+  display: none;
+
+  @include block_767 {
+    display: initial;
+  }
+}
+
 .category__btn {
   position: absolute;
   display: flex;
