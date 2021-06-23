@@ -6,7 +6,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  @include block_991 {
+  @include block_1199 {
     flex-direction: row-reverse;
   }
 
@@ -23,7 +23,7 @@
   .sidebar-toggle {
     display: none;
 
-    @include block_991 {
+    @include block_1199 {
       display: initial;
     }
   }
@@ -33,12 +33,24 @@
     background-color: #fff;
   }
 
+  &-start {
+    @include block_767 {
+      width: 100%;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+
   &-end {
     display: flex;
     align-items: center;
 
     @include block_767 {
       margin-bottom: 20px;
+      justify-content: space-between;
+      width: 100%;
     }
 
     &>* {

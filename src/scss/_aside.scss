@@ -11,7 +11,7 @@
   transition: 0.5s all;
   min-height: 100vh;
 
-  @include block_991 {
+  @include block_1199 {
     position: fixed;
     z-index: 2;
     overflow-y: auto;
@@ -25,11 +25,11 @@
   }
 
   &.hidden {
-    @include block_991 {
+    @include block_1199 {
       left: 0;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
       width: 64px;
       padding-right: 4px;
       padding-left: 4px;

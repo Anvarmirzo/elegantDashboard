@@ -118,13 +118,17 @@
   }
 }
 
-.main-page-table {
+.table-wrapper {
   overflow-x: auto;
   overflow-y: hidden;
   margin-bottom: 20px;
 
   table {
     min-width: 850px;
+
+    &.posts-table {
+      min-width: 944px;
+    }
   }
 }
 

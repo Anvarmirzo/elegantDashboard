@@ -11,6 +11,10 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     padding-top: 20px;
+
+    @include block_480 {
+      justify-content: center;
+    }
   }
 
   &-prev,
@@ -42,5 +46,10 @@
     flex-wrap: wrap;
     width: 32px;
     height: 32px;
+
+    @include block_480 {
+      width: 25px;
+      height: 25px;
+    }
   }
 }
