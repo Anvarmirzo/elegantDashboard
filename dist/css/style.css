@@ -5723,3 +5723,33 @@ label {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 575.98px) {
+  .footer {
+    position: relative;
+  }
+
+  .main {
+    margin-bottom: 0;
+  }
+
+  .footer--flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480.98px) {
+  .footer-start p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
