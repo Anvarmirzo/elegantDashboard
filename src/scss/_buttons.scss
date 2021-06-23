@@ -25,11 +25,21 @@ button {
 }
 
 .main-btns-wrapper {
+  @include block_575 {
+    justify-content: space-between;
+  }
 
   button,
   select {
     min-height: 48px;
     line-height: 1.5;
+
+    @include block_575 {
+      width: 48%;
+      margin-right: 0;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
   }
 }
 

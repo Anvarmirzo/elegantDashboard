@@ -5786,6 +5786,20 @@ label {
     position: relative;
   }
 
+  .main-btns-wrapper {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .main-btns-wrapper button,
+  .main-btns-wrapper select {
+    width: 48%;
+    margin-right: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
   .sort-bar {
     padding: 10px 10px 5px;
   }
