@@ -736,11 +736,6 @@ document.addEventListener('DOMContentLoaded', function () {
           input.value = '';
         }
       });
-      document.addEventListener('click', function (e) {
-        if (e.target.classList.contains('icon')) {
-          e.target.parentElement.remove();
-        }
-      });
       var tagBtns = document.querySelectorAll('.tag-btn');
       tagBtns.forEach(function (btn) {
         btn.addEventListener('click', function (e) {
@@ -748,6 +743,49 @@ document.addEventListener('DOMContentLoaded', function () {
           createTag(value);
           tags.push(value);
           addTags();
+          var tagCloseBtns = document.querySelectorAll('.tag .icon');
+
+          if (tagCloseBtns) {
+            var _iterator11 = _createForOfIteratorHelper(tagCloseBtns),
+                _step11;
+
+            try {
+              var _loop2 = function _loop2() {
+                var tagCloseBtn = _step11.value;
+                tagCloseBtn.addEventListener('click', function (e) {
+                  var btnAttr = tagCloseBtn.getAttribute('data-item');
+
+                  var _iterator12 = _createForOfIteratorHelper(tags),
+                      _step12;
+
+                  try {
+                    for (_iterator12.s(); !(_step12 = _iterator12.n()).done;) {
+                      var tagsItem = _step12.value;
+
+                      if (btnAttr === tagsItem) {
+                        tagCloseBtn.parentElement.remove();
+                        tags = tags.filter(function (item) {
+                          return item !== btnAttr;
+                        });
+                      }
+                    }
+                  } catch (err) {
+                    _iterator12.e(err);
+                  } finally {
+                    _iterator12.f();
+                  }
+                });
+              };
+
+              for (_iterator11.s(); !(_step11 = _iterator11.n()).done;) {
+                _loop2();
+              }
+            } catch (err) {
+              _iterator11.e(err);
+            } finally {
+              _iterator11.f();
+            }
+          }
         });
       });
     }

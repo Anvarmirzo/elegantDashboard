@@ -1461,10 +1461,6 @@ button.disabled:focus {
   transform: rotate(180deg);
 }
 
-.show-sidebar-btn {
-  display: none;
-}
-
 .category__btn {
   position: absolute;
   display: -webkit-box;
@@ -2567,10 +2563,6 @@ label {
 
 .main-nav a:focus {
   outline: none;
-}
-
-.main-nav .sidebar-toggle {
-  display: none;
 }
 
 .main-nav--bg {
@@ -5537,6 +5529,10 @@ label {
     width: 100%;
   }
 
+  .main-nav .sidebar-toggle {
+    display: none;
+  }
+
   .media-main .col-xl-2 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 20%;
@@ -5702,10 +5698,6 @@ label {
     flex-direction: row-reverse;
   }
 
-  .main-nav .sidebar-toggle {
-    display: initial;
-  }
-
   .sort-bar {
     padding: 20px;
   }
@@ -5756,10 +5748,6 @@ label {
 }
 
 @media (max-width: 767.98px) {
-  .show-sidebar-btn {
-    display: initial;
-  }
-
   .main-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

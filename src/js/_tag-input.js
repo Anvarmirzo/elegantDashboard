@@ -2,7 +2,7 @@
   const tagContainer = document.querySelector('.tag-container');
   if (tagContainer) {
     const input = document.querySelector('.tag-container input');
-    const tags = [];
+    let tags = [];
 
     function createTag(label) {
       const div = document.createElement('div');
@@ -46,12 +46,6 @@
       }
     });
 
-    document.addEventListener('click', function (e) {
-      if (e.target.classList.contains('icon')) {
-        e.target.parentElement.remove();
-      }
-    });
-
     const tagBtns = document.querySelectorAll('.tag-btn');
     tagBtns.forEach((btn) => {
       btn.addEventListener('click', function (e) {
@@ -59,6 +53,20 @@
         createTag(value);
         tags.push(value);
         addTags();
+        const tagCloseBtns = document.querySelectorAll('.tag .icon');
+        if (tagCloseBtns) {
+          for (const tagCloseBtn of tagCloseBtns) {
+            tagCloseBtn.addEventListener('click', function (e) {
+              let btnAttr = tagCloseBtn.getAttribute('data-item');
+              for (const tagsItem of tags) {
+                if (btnAttr === tagsItem) {
+                  tagCloseBtn.parentElement.remove();
+                  tags = tags.filter((item) => item !== btnAttr);
+                }
+              }
+            });
+          }
+        }
       });
     });
   }

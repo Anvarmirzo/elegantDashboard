@@ -14,17 +14,13 @@
     flex-direction: column-reverse;
   }
 
-  a {
-    &:focus {
-      outline: none;
-    }
+  a:focus {
+    outline: none;
   }
 
   .sidebar-toggle {
-    display: none;
-
-    @include block_1199 {
-      display: initial;
+    @media (min-width:1200px) {
+      display: none;
     }
   }
 
