@@ -850,6 +850,31 @@ img {
   z-index: 100000;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(253, 253, 253, 0.4);
+}
+
 body {
   background-color: #F0F2FA;
 }
@@ -1627,6 +1652,10 @@ button.disabled:focus {
   background-color: #E0E3F1;
 }
 
+.dropdown-btn {
+  color: #b9b9b9;
+}
+
 /* Links */
 
 .link-info {
@@ -2001,7 +2030,7 @@ label {
   /* Users Table */
 }
 
-.users-table {
+.users-table table {
   width: 100%;
   text-align: left;
   border-collapse: collapse;
@@ -2128,6 +2157,24 @@ label {
   line-height: 1.4;
   letter-spacing: 0.2px;
   color: #b9b9b9;
+}
+
+.main-page-table {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 20px;
+}
+
+.main-page-table table {
+  min-width: 850px;
+}
+
+.posts-table__primary-text {
+  color: #2f49d1;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.3px;
 }
 
 .pagination {
@@ -3792,14 +3839,6 @@ label {
   width: 71px;
   height: 47px;
   border-radius: 6px;
-}
-
-.posts-table__primary-text {
-  color: #2f49d1;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.4;
-  letter-spacing: -0.3px;
 }
 
 .drag__title h3 {
@@ -5615,10 +5654,6 @@ label {
 }
 
 @media (max-width: 991.98px) {
-  .chart-page .posts-table {
-    margin-bottom: 20px;
-  }
-
   .customers-wrapper {
     height: auto;
   }

@@ -26,15 +26,27 @@ document.addEventListener('DOMContentLoaded', function () {
   feather.replace();
 
   (function () {
-    var sidebar = document.querySelector('.sidebar');
-    var catSubMenu = document.querySelector('.cat-sub-menu');
-    var sidebarBtn = document.querySelector('.sidebar-toggle');
+    var sidebar = document.querySelector('.sidebar'),
+        catSubMenu = document.querySelector('.cat-sub-menu'),
+        sidebarBtn = document.querySelector('.sidebar-toggle');
 
-    if (sidebarBtn) {
+    if (sidebarBtn && catSubMenu && sidebarBtn) {
+      var hideSidebar = function hideSidebar() {
+        var windowInnerWidth = window.innerWidth;
+
+        if (windowInnerWidth <= 992) {
+          sidebar.classList.add('hidden');
+        }
+      };
+
       sidebarBtn.addEventListener('click', function () {
         sidebarBtn.classList.toggle('rotated');
         sidebar.classList.toggle('hidden');
         catSubMenu.classList.remove('visible');
+      });
+      hideSidebar();
+      window.addEventListener('resize', function () {
+        hideSidebar();
       });
     }
   })();

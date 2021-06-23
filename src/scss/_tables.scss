@@ -2,13 +2,16 @@
 
   /* Users Table */
   &-table {
-    width: 100%;
-    text-align: left;
-    border-collapse: collapse;
-    line-height: 1.4;
-    letter-spacing: -0.3px;
-    color: $body;
-    transition: none;
+
+    table {
+      width: 100%;
+      text-align: left;
+      border-collapse: collapse;
+      line-height: 1.4;
+      letter-spacing: -0.3px;
+      color: $body;
+      transition: none;
+    }
 
     &-info {
       line-height: 1.4;
@@ -111,6 +114,29 @@
       line-height: 1.4;
       letter-spacing: 0.2px;
       color: $label;
+    }
+  }
+}
+
+.main-page-table {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: 20px;
+
+  table {
+    min-width: 850px;
+  }
+}
+
+
+.posts {
+  &-table {
+    &__primary-text {
+      color: $primary-color;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.4;
+      letter-spacing: -0.3px;
     }
   }
 }
