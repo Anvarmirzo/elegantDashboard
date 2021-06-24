@@ -124,9 +124,17 @@
     .search-wrapper {
       width: 90%;
 
+      @include block_991 {
+        width: 100%;
+      }
+
       input {
         width: 100%;
       }
+    }
+
+    .select-wrapper {
+      width: max-content;
     }
   }
 }

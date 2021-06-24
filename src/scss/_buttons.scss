@@ -256,9 +256,16 @@ button {
     background: rgba(0, 97, 247, 0.15);
   }
 
+  @media (max-width:1300px) {
+    padding: 10px 7px;
+  }
+
   svg {
     margin-left: 10px;
 
+    @media (max-width:1300px) {
+      margin-left: 5px;
+    }
   }
 }
 

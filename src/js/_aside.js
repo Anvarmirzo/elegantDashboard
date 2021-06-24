@@ -16,14 +16,16 @@
 })();
 
 (function () {
-  const showCatBtn = document.querySelector('.show-cat-btn');
-  const catSubMenu = document.querySelector('.cat-sub-menu');
-  if (showCatBtn) {
-    showCatBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      catSubMenu.classList.toggle('visible');
-      const catBtnToRotate = document.querySelector('.category__btn');
-      catBtnToRotate.classList.toggle('rotated');
+  const showCatBtns = document.querySelectorAll('.show-cat-btn');
+  if (showCatBtns) {
+    showCatBtns.forEach((showCatBtn) => {
+      const catSubMenu = showCatBtn.nextElementSibling;
+      showCatBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        catSubMenu.classList.toggle('visible');
+        const catBtnToRotate = document.querySelector('.category__btn');
+        catBtnToRotate.classList.toggle('rotated');
+      });
     });
   }
 })();

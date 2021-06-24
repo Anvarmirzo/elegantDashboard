@@ -66,15 +66,17 @@ document.addEventListener('DOMContentLoaded', function () {
   })();
 
   (function () {
-    var showCatBtn = document.querySelector('.show-cat-btn');
-    var catSubMenu = document.querySelector('.cat-sub-menu');
+    var showCatBtns = document.querySelectorAll('.show-cat-btn');
 
-    if (showCatBtn) {
-      showCatBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        catSubMenu.classList.toggle('visible');
-        var catBtnToRotate = document.querySelector('.category__btn');
-        catBtnToRotate.classList.toggle('rotated');
+    if (showCatBtns) {
+      showCatBtns.forEach(function (showCatBtn) {
+        var catSubMenu = showCatBtn.nextElementSibling;
+        showCatBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          catSubMenu.classList.toggle('visible');
+          var catBtnToRotate = document.querySelector('.category__btn');
+          catBtnToRotate.classList.toggle('rotated');
+        });
       });
     }
   })();
